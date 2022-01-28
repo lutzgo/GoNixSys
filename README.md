@@ -1,0 +1,2 @@
+# GoNixSys
+personal NixOS configuration
