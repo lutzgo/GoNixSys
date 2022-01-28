@@ -43,7 +43,7 @@
           ./flake-default-modules.nix
           ./hardware/vbox.nix
           ./system/peter.nix
-          # ./.secrets/system/peter.nix
+          ./.secrets/system/peter.nix
           ./network/peter.nix
           # ./packages/extra.nix
           #./programs/openrgb.nix
