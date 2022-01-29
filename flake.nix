@@ -45,6 +45,7 @@
           ./system/peter.nix
           ./.secrets/system/peter.nix
           ./network/peter.nix
+          # nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
           # ./packages/extra.nix
           #./programs/openrgb.nix
           # ./programs/obs-studio.nix

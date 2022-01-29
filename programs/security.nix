@@ -16,8 +16,10 @@
   services = {
     dbus.apparmor = "enabled";
     openssh = {
+      forwardX11 = true;
       passwordAuthentication = false;
       permitRootLogin = "no";
+      ports = [ 39901 ];
     };
   };
 }

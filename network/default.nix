@@ -2,6 +2,14 @@
 
 {
   networking = {
+    # Firewall
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [
+        # Web traffic
+        80 443
+      ];
+    };
     nameservers = [
       "1.1.1.1"
       "9.9.9.9"
@@ -13,14 +21,6 @@
     useDHCP = false;
     # If using dhcpcd:
     dhcpcd.extraConfig = "nohook resolv.conf";
-    # Firewall
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [
-        # Web traffic
-        80 443
-      ];
-    };
   };
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
