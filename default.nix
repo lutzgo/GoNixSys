@@ -83,25 +83,25 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users = {
-    lgo = {
-      description = "lgo";
-      home = "/home/lgo";
-      extraGroups = [
-        "audio"
-        "docker"
-        "lp"
-        "networkmanager"
-        "users"
-        "video"
-        "wheel"
-      ];
-      isNormalUser = true;
-      mutableUsers = false;
-      shell = pkgs.zsh;
-      uid = 1000;
-    };
-  };
+  # users.users = {
+  #   lgo = {
+  #     description = "Lutz Go";
+  #     home = "/home/lgo";
+  #     extraGroups = [
+  #       "audio"
+  #       "docker"
+  #       "lp"
+  #       "networkmanager"
+  #       "users"
+  #       "video"
+  #       "wheel"
+  #     ];
+  #     isNormalUser = true;
+  #     mutableUsers = false;
+  #     shell = pkgs.zsh;
+  #     uid = 1000;
+  #   };
+  # };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

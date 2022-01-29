@@ -42,9 +42,10 @@
         modules = [
           ./flake-default-modules.nix
           ./hardware/vbox.nix
-          ./system/peter.nix
-          ./.secrets/system/peter.nix
           ./network/peter.nix
+          ./system/peter.nix
+          ./users/default.nix
+          ./.secrets/system/peter.nix
           # nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
           # ./packages/extra.nix
           #./programs/openrgb.nix

@@ -4,15 +4,21 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users = {
     lgo = {
-      isNormalUser = true;
+      description = "Lutz Go";
       home = "/home/lgo";
-      description = "lgo";
       extraGroups = [
-        "wheel"
-        "networkmanager"
-        "video"
+        "audio"
+        "docker"
         "lp"
+        "networkmanager"
+        "users"
+        "video"
+        "wheel"
       ];
+      isNormalUser = true;
+      mutableUsers = false;
+      shell = pkgs.zsh;
+      uid = 1000;
     };
   };
 }

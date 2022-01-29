@@ -12,7 +12,7 @@
   ];
 
   programs = {
-    bat.enable = true;
+    # bat.enable = true;
     git = {
       userName = "lugott";
       userEmail = "lutz0go@gmail.com";
