@@ -52,6 +52,9 @@
   };
 
   nix = {
+    extraOptions = ''
+      experimental-features = nix-command flakes
+    '';
     # Garbage collection
     gc = {
       automatic = true;
@@ -64,12 +67,11 @@
     };
     # Make ready for nix flakes
     package = pkgs.nixFlakes;
-    autoOptimiseStore = true;
     readOnlyStore = false;
-    settings.sandbox = true;
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
+    settings = {
+      auto-optimise-store = true;
+      sandbox = true;
+    };
   };
 
   programs = {

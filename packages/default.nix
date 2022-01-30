@@ -17,6 +17,7 @@
       nano
       nushell
       pciutils
+      starship
       wget
       
 
