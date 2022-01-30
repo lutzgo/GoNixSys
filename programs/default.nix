@@ -64,7 +64,7 @@
     };
     # Make ready for nix flakes
     package = pkgs.nixFlakes;
-    auto-optimise-store = true;
+    autoOptimiseStore = true;
     readOnlyStore = false;
     settings.sandbox = true;
     extraOptions = ''
