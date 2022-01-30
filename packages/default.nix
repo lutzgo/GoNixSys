@@ -28,7 +28,6 @@
       ripgrep
       sd
       starship
-      tealdeer
       tokei
       wget
       zoxide
