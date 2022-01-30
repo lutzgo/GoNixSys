@@ -5,7 +5,7 @@
   programs.nushell = { 
     enable = true;
     settings = {
-      prompt = "starship prompt";
+      startup = [ "line_editor.edit_mode "vi"" ];
     };
   };
 }
