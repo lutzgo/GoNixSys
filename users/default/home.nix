@@ -15,11 +15,11 @@
   home.stateVersion = "21.11";
 
   imports = [
-    ./alacritty.nix
+    # ./alacritty.nix
     ./mako.nix
     ./git.nix
-    ./neofetch/default.nix
-    ./swappy.nix
+    # ./neofetch/default.nix
+    # ./swappy.nix
     ./sway/default.nix
     ./waybar/default.nix
     ./wofi/default.nix

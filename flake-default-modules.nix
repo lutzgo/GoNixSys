@@ -9,6 +9,5 @@
     ./programs/default.nix
     ./programms/nano.nix
     ./programs/security.nix
-    ./programs/zsh.nix
   ];
 }

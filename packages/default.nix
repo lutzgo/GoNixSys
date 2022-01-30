@@ -14,9 +14,10 @@
       git-crypt
       gnupg
       mkpasswd
+      nushell
       pciutils
       wget
-      zsh
+      
 
       ####Compression tools ####
       #zstd zpaq
