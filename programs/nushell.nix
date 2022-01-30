@@ -4,8 +4,8 @@
 
   programs.nushell = { 
     enable = true;
-    settings = {
-      prompt = "starship prompt";
-    };
+    # settings = {
+    #   prompt = "starship prompt";
+    # };
   };
 }
