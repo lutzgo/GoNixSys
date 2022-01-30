@@ -8,7 +8,7 @@
     ./packages/default.nix
     ./programs/default.nix
     ./programs/nano.nix
-    ./programs/starship/default.nix
+    ./programs/starship.nix
     ./programs/security.nix
   ];
 }
