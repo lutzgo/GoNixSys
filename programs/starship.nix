@@ -3,6 +3,9 @@
 {
 
   programs.starship = { 
-      enable = true;
+    enable = true;
+    settings = {
+      add_newline = true
+    };
   };
 }
