@@ -1,5 +1,5 @@
 #!/bin/sh
-ROOT="/home/lgo/nixos-config"
+ROOT="/home/lgo/GoNixSys"
 SECRETS=".secrets"
 
 pushd "$ROOT"
