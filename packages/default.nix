@@ -14,6 +14,7 @@
       git-crypt
       gnupg
       mkpasswd
+      nano
       nushell
       pciutils
       wget
