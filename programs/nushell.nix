@@ -5,7 +5,7 @@
   programs.nushell = { 
     enable = true;
     settings = {
-      startup = [ "line_editor.edit_mode "vi"" ];
+      startup = [ "line_editor.edit_mode 'vi'" ];
     };
   };
 }
