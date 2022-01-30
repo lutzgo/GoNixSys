@@ -4,7 +4,8 @@
   networking = {
     hostName = "peter";
     ## use the right devices from ifconfig
-    interfaces.enp34s0.useDHCP = true;
+    interfaces.enp0S3.useDHCP = true;
+    interfaces.enp0S8.useDHCP = true;
     # Firewall
     firewall = {
       # ssh & web traffic
