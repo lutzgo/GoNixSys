@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nixos-hardware, ... }:
+  outputs = { self, nixpkgs, home-manager, nixos-hardware, ... }:
   let
     pkgs = import nixpkgs {
       config = {
@@ -23,8 +23,8 @@
     };
     lib = nixpkgs.lib;
   in {
-    homeManagerConfigurations = {
-      lgo = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations = {
+      "lgo@peter" = home-manager.lib.homeManagerConfiguration {
         system = "x86_64-linux";
         inherit pkgs;
         username = "lgo";
