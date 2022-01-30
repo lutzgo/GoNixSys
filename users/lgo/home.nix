@@ -8,7 +8,6 @@
 
   imports = [
     ./../default/home.nix
-    # ./../../.secrets/users/lgo/zsh/default.nix
   ];
 
   programs = {
