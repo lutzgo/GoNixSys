@@ -9,16 +9,29 @@
     systemPackages = with pkgs; [
       #### CLI ####
       age
+      bandwhich
+      bat
+      delta
+      dust
+      exa
+      fd
       git
       git-lfs 
       git-crypt
       gnupg
+      grex
       mkpasswd
       nano
       nushell
       pciutils
+      procs
+      ripgrep
+      sd
       starship
+      tealdeer
+      tokei
       wget
+      zoxide
       
 
       ####Compression tools ####
