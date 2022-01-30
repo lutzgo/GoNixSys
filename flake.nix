@@ -23,8 +23,8 @@
     };
     lib = nixpkgs.lib;
   in {
-    homeConfigurations = {
-      "lgo@peter" = home-manager.lib.homeManagerConfiguration {
+    homeManagerConfigurations = {
+      lgo = home-manager.lib.homeManagerConfiguration {
         system = "x86_64-linux";
         inherit pkgs;
         username = "lgo";
