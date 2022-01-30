@@ -17,7 +17,7 @@
           "wheel"
         ];
         isNormalUser = true;
-        shell = pkgs.zsh;
+        shell = pkgs.nushell;
         uid = 1000;
       };
     };

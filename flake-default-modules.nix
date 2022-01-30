@@ -7,7 +7,7 @@
     ./network/default.nix
     ./packages/default.nix
     ./programs/default.nix
-    # ./programms/nano.nix
+    ./programs/nano.nix
     ./programs/security.nix
   ];
 }
