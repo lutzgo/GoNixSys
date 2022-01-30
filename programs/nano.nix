@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs = {
@@ -26,6 +26,7 @@
       set keycolor cyan
       set functioncolor green
     '';
+    nano.syntaxHighlight = true;
   };
 
 }
