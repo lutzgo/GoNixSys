@@ -17,6 +17,6 @@
         success_symbol = "➜";
         error_symbol = "➜";
       };
-    }
+    };
   };
 }
