@@ -16,20 +16,20 @@
 
   imports = [
     # ./alacritty.nix
-    ./mako.nix
-    ./git.nix
+    # ./mako.nix
+    # ./git.nix
     # ./neofetch/default.nix
     # ./swappy.nix
-    ./sway/default.nix
-    ./waybar/default.nix
-    ./wofi/default.nix
-    ./starship/default.nix
-    ./xdg.nix
-    ./gtk.nix
-    ./cursor.nix
-    ./vscode.nix
+    # ./sway/default.nix
+    # ./waybar/default.nix
+    # ./wofi/default.nix
+    # ./starship/default.nix
+    # ./xdg.nix
+    # ./gtk.nix
+    # ./cursor.nix
+    # ./vscode.nix
     # ./mangohud.nix
     # ./chromium.nix
-    ./kitty/default.nix
+    # ./kitty/default.nix
   ];
 }
