@@ -5,9 +5,7 @@
   programs.nushell = { 
     enable = true;
     settings = {
-      startup = [ 
-          "config set prompt "starship prompt"
-      ];
+      startup = [ "config set prompt "starship prompt" ];
     };
   };
 }
