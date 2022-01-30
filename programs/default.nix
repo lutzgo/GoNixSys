@@ -64,9 +64,9 @@
     };
     # Make ready for nix flakes
     package = pkgs.nixFlakes;
-    autoOptimiseStore = true;
+    auto-optimise-store = true;
     readOnlyStore = false;
-    useSandbox = true;
+    settings.sandbox = true;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
