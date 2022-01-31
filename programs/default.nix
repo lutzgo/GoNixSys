@@ -3,29 +3,29 @@
 {
 
   ### Environment ###
-  environment = {
-    shellAliases = {
-      cat = "bat";
-      cd = "z";
-      dmesg = "rmesg";
-      du = "dust -s";
-      find = "fd";
-      grep = "rg";
-      la = "exa --icons -l --group-directories-first";
-      ps = "procs";
-      tldr = "tealdeer";
-      # cp = "cp -i";
-      # diff = "diff --color=auto";
-      # dmesg = "dmesg --color=always";
-      # egrep = "egrep --color=auto";
-      # fgrep = "fgrep --color=auto";
-      # grep = "grep --color=auto";
-      # mv = "mv -i";
-      # ping = "ping -c3";
-      # ps = "ps -ef";
-      # # sudo = "sudo -i";
-      # vdir = "vdir --color=auto";
-    };
+  # environment = {
+  #   shellAliases = {
+  #     cat = "bat";
+  #     cd = "z";
+  #     dmesg = "rmesg";
+  #     du = "dust -s";
+  #     find = "fd";
+  #     grep = "rg";
+  #     la = "exa --icons -l --group-directories-first";
+  #     ps = "procs";
+  #     tldr = "tealdeer";
+  #     # cp = "cp -i";
+  #     # diff = "diff --color=auto";
+  #     # dmesg = "dmesg --color=always";
+  #     # egrep = "egrep --color=auto";
+  #     # fgrep = "fgrep --color=auto";
+  #     # grep = "grep --color=auto";
+  #     # mv = "mv -i";
+  #     # ping = "ping -c3";
+  #     # ps = "ps -ef";
+  #     # # sudo = "sudo -i";
+  #     # vdir = "vdir --color=auto";
+  #   };
         # shellAliases = {
     #   cp = "cp -i";
     #   diff = "diff --color=auto";
