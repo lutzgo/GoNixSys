@@ -18,7 +18,7 @@
     # ./alacritty.nix
     # ./mako.nix
     ./git.nix
-    ./nushell.nix
+    # ./nushell.nix
     # ./neofetch/default.nix
     # ./swappy.nix
     # ./sway/default.nix
