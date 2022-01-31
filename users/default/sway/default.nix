@@ -1,9 +1,9 @@
 { config, pkgs, fetchurl, ... }:
 
 let
-  colorScheme = import ../../../color-schemes/campbell.nix;
+  colorScheme = import ../../../color-schemes/nord.nix;
   #background = "$HOME/.cache/backgrounds/nix-wallpaper-3d-showcase.png";
-  background = "$HOME/.cache/backgrounds/highway-to-shell.png";
+  background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
   modifier = "Mod4";
   left = "h";
   down = "j";
@@ -18,7 +18,7 @@ let
 in {
   home = {
     file = {
-      ".cache/backgrounds/highway-to-shell.png".source = ../../../backgrounds/highway-to-shell.png;
+      ".cache/backgrounds/greatwave_nord.jpg".source = ../../../backgrounds/greatwave_nord.jpg;
       #".cache/backgrounds/nix-wallpaper-3d-showcase.png".source = builtins.fetchurl {
       #  url = https://raw.githubusercontent.com/papojari/nixos-artwork/master/wallpapers/nix-wallpaper-3d-showcase-1920x1080.png;
       #  sha256 = "43b0007ad592de52b927713cfea832f80322808cd274422411228e07066db417";

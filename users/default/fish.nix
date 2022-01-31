@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  users.defaultUserShell = pkgs.fish;
+  # users.defaultUserShell = pkgs.fish;
   programs = {
     fish = {
       enable = true;
