@@ -16,6 +16,16 @@
       };
     };
 
+    # #### use lspci -v to determine the kernel-module for your network-card
+    # boot.initrd.availableKernelModules = [ "i2c_piix4" ];
+    # boot.initrd.network.enable = true;
+    # boot.initrd.network.ssh = {
+    #   enable = true;
+    #   port = 39901;
+    #   authorizedKeys = "ssh-rsa AAAAyourpublic-key-here....";
+    #   hostKeys = [ "/etc/secrets/initrd/ssh_host_rsa_key" "/etc/secrets/initrd/ssh_host_ed25519_key" ];
+    # };
+
     initrd.preLVMCommands = ''
       echo '--- OWNERSHIP NOTICE ---'
       echo 'This device is property of Lutz Go'
