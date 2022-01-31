@@ -14,6 +14,7 @@
         "cat" = "bat";
         "codecat" = "prettybat";
         "diff" = "batdiff --delta";
+        "find" = "fd … -X bat";
         "grep" = "batgrep";
         "man" = "batman";
         "watch" = "batwatch";

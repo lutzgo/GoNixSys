@@ -9,6 +9,8 @@
     bat-extras.batwatch
     bat-extras.prettybat
     delta
+    fd
+    ripgrep-all
   ];
 
   programs.bat = {
