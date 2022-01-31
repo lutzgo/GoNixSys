@@ -1,7 +1,9 @@
 format = """
-[┌───────────────────>](bold green)
+[┌───────────────────](bold green)
 [│](bold green)$all
 [└─>](bold green) """
+
+right_format = """$time$battery"""
 
 # Inserts a blank line between shell prompts
 add_newline = true
