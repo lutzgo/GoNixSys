@@ -17,7 +17,7 @@
     hyperfine
     procs
     ripgrep-all
-    rmesg
+    # rmesg
     sd
     tealdeer
     tokei
