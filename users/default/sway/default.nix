@@ -41,6 +41,7 @@ in {
   };
   wayland.windowManager.sway = {
     enable = true;
+    wrapperFeatures.gtk = true ;
     config = {
       gaps = {
         smartBorders = "on";
@@ -260,6 +261,6 @@ in {
     };
   };
   home.packages = with pkgs; [
-    waybar ulauncher wofi wofi-emoji slurp grim swappy swaylock-fancy notify-desktop mako libappindicator gnome.zenity
+    waybar wofi wofi-emoji slurp grim swappy swaylock-fancy notify-desktop mako libappindicator
   ];
 }
