@@ -17,9 +17,10 @@
     hyperfine
     procs
     ripgrep-all
+    rmesg
     sd
     tealdeer
-    tokai
+    tokei
     zoxide
   ];
 
