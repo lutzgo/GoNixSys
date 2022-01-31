@@ -8,28 +8,15 @@
   environment = {
     systemPackages = with pkgs; [
       #### CLI ####
-      # age
-      # bandwhich
-      # bat
-      # delta
-      # dust
-      # exa
-      # fd
       fish
       git
       git-lfs 
       git-crypt
       gnupg
-      # grex
       mkpasswd
       nano
       # nushell
       pciutils
-      # procs
-      # ripgrep
-      # sd
-      # starship
-      # tokei
       wget
       # zoxide
       

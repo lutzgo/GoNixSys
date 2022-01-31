@@ -52,6 +52,8 @@
 
   i18n = {
     extraLocaleSettings = {
+      LANGUAGE = "de_DE.UTF-8";
+	    LC_ALL = "de_DE.UTF-8";
       LANG = "de_DE.UTF-8";
       LC_TIME = "de_DE.UTF-8";
       LC_MEASUREMENT = "de_DE.UTF-8";
