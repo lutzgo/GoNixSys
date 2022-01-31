@@ -58,7 +58,7 @@
     #   create-trash = "sudo mkdir -p .Trash-$UID/{expunged,files,info} && sudo chown -R $USER .Trash-$UID && sudo chmod -R 0700 .Trash-$UID";
     #   random-noise-video = "ffmpeg -f rawvideo -framerate 60 -pixel_format yuv422p -video_size 1920x1080 -t 10 -i /dev/urandom output.mkv";
     # };
-  };
+  # };
 
   nix = {
     extraOptions = ''
