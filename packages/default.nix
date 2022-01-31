@@ -15,6 +15,7 @@
       dust
       exa
       fd
+      fish
       git
       git-lfs 
       git-crypt

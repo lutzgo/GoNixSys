@@ -7,6 +7,7 @@
     ./network/default.nix
     ./packages/default.nix
     ./programs/default.nix
+    ./programms/fish.nix
     ./programs/nano.nix
     # ./programs/nushell.nix
     ./programs/starship.nix
