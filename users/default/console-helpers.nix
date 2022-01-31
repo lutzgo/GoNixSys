@@ -21,6 +21,7 @@
     sd
     tealdeer
     tokei
+    zellij
     zoxide
   ];
 
