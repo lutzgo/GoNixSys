@@ -1,6 +1,6 @@
 {
   name = "Nord";
-  reference = "https://www.nordtheme.com/;
+  reference = "https://www.nordtheme.com/";
   black = "#2E3440";
   red = "#BF616A";
   green = "#A3BE8C";
