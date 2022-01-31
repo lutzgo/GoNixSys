@@ -8,6 +8,7 @@
     bat-extras.batgrep
     bat-extras.batwatch
     bat-extras.prettybat
+    delta
   ];
 
   programs.bat = {
