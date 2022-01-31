@@ -15,7 +15,7 @@
         "catp" = "bat --plain --color";
         "codecat" = "prettybat";
         "diff" = "batdiff --delta";
-        "dmesg" = "rmesg";
+        # "dmesg" = "rmesg";
         "du" = "dust";
         "find" = "fd … -X bat";
         "grep" = "batgrep";
