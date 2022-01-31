@@ -1,7 +1,10 @@
 { config, pkgs, lib, ... }:
 
 {
-  # users.defaultUserShell = pkgs.fish;
+  imports = [
+    ./starship/default.nix
+  ];
+
   programs = {
     fish = {
       enable = true;
