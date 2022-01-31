@@ -7,9 +7,9 @@
       enable = true;
       promptInit = "starship init fish | source";
       # shellInit = 
-      shellAliases = {
-        alias z=__zoxide_z
-      };
+      # shellAliases = {
+      #   alias z=__zoxide_z
+      # };
     };
   };
 }
