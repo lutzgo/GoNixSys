@@ -16,6 +16,7 @@
     ripgrep-all
     sd
     tealdeer
+    zoxide
   ];
 
   programs = {
@@ -33,6 +34,10 @@
     exa = {
       enable = true;
       enableAliases = true;
+    };
+    zoxide = {
+      enable = true;
+      enableFishIntegration = true;
     };
   };
 

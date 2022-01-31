@@ -18,6 +18,7 @@
         "du" = "dust";
         "find" = "fd … -X bat";
         "grep" = "batgrep";
+        "li" = "ls -lah --icons";
         "man" = "batman";
         "ps" = "procs";
         "sed" = "sd";
