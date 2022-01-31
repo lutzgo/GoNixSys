@@ -41,7 +41,7 @@
         system = "x86_64-linux";
         modules = [
           ./flake-default-modules.nix
-          ./hardware/vbox.nix
+          ./hardware/peter.nix
           ./network/peter.nix
           ./system/peter.nix
           ./users/default.nix

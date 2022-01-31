@@ -10,7 +10,6 @@
     ./programs/fish.nix
     ./programs/nano.nix
     # ./programs/nushell.nix
-    ./programs/starship.nix
     ./programs/security.nix
   ];
 }
