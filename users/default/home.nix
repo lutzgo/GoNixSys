@@ -17,6 +17,7 @@
   imports = [
     # ./alacritty.nix
     # ./mako.nix
+    ./console-helpers.nix
     ./fish.nix
     ./git.nix
     # ./nushell.nix
