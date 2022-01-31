@@ -2,20 +2,24 @@
 
 {
   home.packages = with pkgs; [
+    bandwhich
     bat
     bat-extras.batdiff
     bat-extras.batman
     bat-extras.batgrep
     bat-extras.batwatch
     bat-extras.prettybat
+    bottom
     delta
     dust
     exa
     fd
+    hyperfine
     procs
     ripgrep-all
     sd
     tealdeer
+    tokai
     zoxide
   ];
 

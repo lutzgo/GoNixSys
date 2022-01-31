@@ -15,14 +15,14 @@
         "catp" = "bat --plain --color";
         "codecat" = "prettybat";
         "diff" = "batdiff --delta";
+        "dmesg" = "rmesg";
         "du" = "dust";
         "find" = "fd … -X bat";
         "grep" = "batgrep";
-        "li" = "ls -lah --icons";
+        "li" = "ls -lah --icons --group-directories-first";
         "man" = "batman";
         "ps" = "procs";
         "sed" = "sd";
-        "tldr" = "tealdeer";
         "watch" = "batwatch";
       };
     };
