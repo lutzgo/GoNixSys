@@ -22,7 +22,7 @@
     # ./nushell.nix
     # ./neofetch/default.nix
     # ./swappy.nix
-    # ./sway/default.nix
+    ./sway/default.nix
     # ./waybar/default.nix
     # ./wofi/default.nix
     # ./starship/default.nix
