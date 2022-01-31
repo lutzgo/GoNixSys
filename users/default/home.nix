@@ -17,7 +17,7 @@
   imports = [
     # ./alacritty.nix
     # ./mako.nix
-    # ./fish.nix
+    ./fish.nix
     ./git.nix
     # ./nushell.nix
     # ./neofetch/default.nix
