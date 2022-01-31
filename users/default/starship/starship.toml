@@ -1,6 +1,6 @@
 format = """
 [┌───────────────────>](bold green)
-[│](bold green)$directory$rust$package
+[│](bold green)$all
 [└─>](bold green) """
 
 # Inserts a blank line between shell prompts
