@@ -45,13 +45,13 @@ in {
       "${modifier}+x" = "exec foot";
 
       # Brightness
-      bindsym XF86MonBrightnessDown exec "brightnessctl set 2%-"
-      bindsym XF86MonBrightnessUp exec "brightnessctl set +2%"
+      "XF86MonBrightnessDown" = "exec brightnessctl set 2%-";
+      "XF86MonBrightnessUp" =  "exec brightnessctl set +2%";
 
       # Volume
-      bindsym XF86AudioRaiseVolume exec 'pactl set-sink-volume @DEFAULT_SINK@ +1%'
-      bindsym XF86AudioLowerVolume exec 'pactl set-sink-volume @DEFAULT_SINK@ -1%'
-      bindsym XF86AudioMute exec 'pactl set-sink-mute @DEFAULT_SINK@ toggle'
+      "XF86AudioRaiseVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ +2%'";
+      "XF86AudioLowerVolume" = "exec 'pactl set-sink-volume @DEFAULT_SINK@ -2%'";
+      "XF86AudioMute" = "exec 'pactl set-sink-mute @DEFAULT_SINK@ toggle'";
 
       # Moving around
       ## Move your focus around
