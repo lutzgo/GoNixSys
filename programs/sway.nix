@@ -104,6 +104,7 @@
       wantedBy = [ "graphical-session.target" ];
       partOf = [ "graphical-session.target" ];
       serviceConfig = {
+        Type = "simple";
         # kanshi doesn't have an option to specifiy config file yet, so it looks
         # at .config/kanshi/config
         ExecStart = ''
@@ -122,7 +123,7 @@
         Type = "dbus";
         BusName = "org.freedesktop.Notifications";
         ExecStart = ''
-          ${pkgs.mako}/bin/mako"
+          ${pkgs.mako}/bin/mako
         '';
         RestartSec = 5;
         Restart = "always";
@@ -149,21 +150,19 @@
       };
     };
 
-    # services.waybar = {
-    #   Unit = {
-    #     Description = "Wayland bar for Sway and Wlroots based compositors";
-    #     PartOf = [ "graphical-session.target" ];
-    #   };
-    #   Install = {
-    #     WantedBy = [ "graphical-session.target" ];
-    #   };
-    #   Service = {
-    #     Type = "simple";
-    #     ExecStart = "${start-waybar}/bin/start-waybar";
-    #     RestartSec = 5;
-    #     Restart = "always";
-    #   };
-    # };
+    services.waybar = {
+      description = "Wayland bar for Sway and Wlroots based compositors";
+      wantedBy = [ "graphical-session.target" ];
+      partOf = [ "graphical-session.target" ];
+      serviceConfig = {
+        Type = "simple";
+        ExecStart = ''
+          ${start-waybar}/bin/start-waybar
+          '';
+        RestartSec = 5;
+        Restart = "always";
+      };
+    };
     
   };
 }
