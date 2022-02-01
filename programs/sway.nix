@@ -26,17 +26,22 @@
   })
 ];
 
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true; # so that gtk works properly
-    extraPackages = with pkgs; [
-      dmenu
-      foot
-      mako
-      swaylock
-      swayidle
-      wl-clipboard
-  ];
+  programs = {
+    light.enable = true;
+    sway = {
+      enable = true;
+      wrapperFeatures.gtk = true; # so that gtk works properly
+      extraPackages = with pkgs; [
+        brightnessctl
+        dmenu
+        foot
+        mako
+        pactl
+        swaylock
+        swayidle
+        wl-clipboard
+      ];
+    };
 };
 
   services.xserver = {
