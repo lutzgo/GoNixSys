@@ -35,11 +35,16 @@
         brightnessctl
         dmenu
         foot
+        grim
         mako
         pactl
+        slurp
         swaylock
         swayidle
+        waybar
         wl-clipboard
+        wofi
+        wofi-emoji
       ];
     };
 };
