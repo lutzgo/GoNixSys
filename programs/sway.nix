@@ -14,12 +14,19 @@
   ];
 };
 
-  services.greetd = {
+  xserver.enable = true;
+  services.xserver.displayManager.gdm = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
-      };
-    };
+    defaultSession = sway;
+    wayland = true;
   };
+
+  # services.greetd = {
+  #   enable = true;
+  #   settings = {
+  #     default_session = {
+  #       command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
+  #     };
+  #   };
+  # };
 }

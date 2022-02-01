@@ -5,7 +5,7 @@
   environment = {
     systemPackages = with pkgs; [
       #### Display-Manager #### 
-      greetd.gtkgreet
+      gnome.gdm
       sway
     ];
   };
