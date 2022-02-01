@@ -151,21 +151,21 @@
       };
     };
 
-    services.waybar = {
-      Unit = {
-        Description = "Wayland bar for Sway and Wlroots based compositors";
-        PartOf = [ "graphical-session.target" ];
-      };
-      Install = {
-        WantedBy = [ "graphical-session.target" ];
-      };
-      Service = {
-        Type = "simple";
-        ExecStart = "${waybar}/bin/waybar";
-        RestartSec = 5;
-        Restart = "always";
-      };
-    };
-
+    # services.waybar = {
+    #   Unit = {
+    #     Description = "Wayland bar for Sway and Wlroots based compositors";
+    #     PartOf = [ "graphical-session.target" ];
+    #   };
+    #   Install = {
+    #     WantedBy = [ "graphical-session.target" ];
+    #   };
+    #   Service = {
+    #     Type = "simple";
+    #     ExecStart = "${start-waybar}/bin/start-waybar";
+    #     RestartSec = 5;
+    #     Restart = "always";
+    #   };
+    # };
+    
   };
 }
