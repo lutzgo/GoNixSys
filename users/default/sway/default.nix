@@ -3,17 +3,14 @@
 {
 
   wayland.windowManager.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true ;
+    config = {
+      floating.border = 1;
+      gaps = {
+        smartBorders = "on";
+        smartGaps = true;
+      };
+      window.border = 1;
+    };
   };
-  home.packages = with pkgs; [
-    sway
-    swaylock
-    swayidle
-    wl-clipboard
-    mako # notification daemon
-    foot # Alacritty is the default terminal in the config
-    wofi # Dmenu is the default in the config but i recommend wofi since its wayland native
-];
 
 }
