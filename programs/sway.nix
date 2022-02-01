@@ -161,11 +161,11 @@
       };
       Service = {
         Type = "simple";
-        ExecStart = "${start-waybar}/bin/start-waybar";
+        ExecStart = "${waybar}/bin/waybar";
         RestartSec = 5;
         Restart = "always";
       };
     };
-    
+
   };
 }
