@@ -16,10 +16,10 @@
 
   services.greetd = {
     greetd.enable = true;
-    # greetd.settings = {
-    #   default_session = {
-    #     command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
-    #   };
-    # };
+    greetd.settings = {
+      default_session = {
+        command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
+      };
+    };
   };
 }
