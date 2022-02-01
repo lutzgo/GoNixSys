@@ -8,18 +8,38 @@
   environment = {
     systemPackages = with pkgs; [
       #### CLI ####
+      bandwhich
+      bat
+      bat-extras.batdiff
+      bat-extras.batman
+      bat-extras.batgrep
+      bat-extras.batwatch
+      bat-extras.prettybat
+      bottom
+      delta
+      dust
+      exa
+      fd
       fish
       git
       git-lfs 
       git-crypt
       gnupg
+      hyperfine
       mkpasswd
       nano
       # nushell
       pciutils
+      procs
+      ripgrep-all
+      # rmesg
+      sd
+      starship
+      tealdeer
+      tokei
       wget
-      # zoxide
-      
+      zellij
+      zoxide
 
       ####Compression tools ####
       #zstd zpaq

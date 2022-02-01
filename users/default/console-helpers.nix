@@ -1,29 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.packages = with pkgs; [
-    bandwhich
-    bat
-    bat-extras.batdiff
-    bat-extras.batman
-    bat-extras.batgrep
-    bat-extras.batwatch
-    bat-extras.prettybat
-    bottom
-    delta
-    dust
-    exa
-    fd
-    hyperfine
-    procs
-    ripgrep-all
-    # rmesg
-    sd
-    tealdeer
-    tokei
-    zellij
-    zoxide
-  ];
 
   programs = {
     bat = {
@@ -37,10 +14,12 @@
       #   } + "/Dracula.tmTheme");
       # };
     };
+
     exa = {
       enable = true;
       enableAliases = true;
     };
+
     zoxide = {
       enable = true;
       enableFishIntegration = true;
