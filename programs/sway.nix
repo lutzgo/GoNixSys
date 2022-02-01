@@ -15,10 +15,12 @@
 };
 
   xserver.enable = true;
-  services.xserver.displayManager.gdm = {
-    enable = true;
+  services.xserver.displayManager = {
     defaultSession = sway;
-    wayland = true;
+    gdm = {
+      enable = true;
+      wayland = true;
+    };
   };
 
   # services.greetd = {
