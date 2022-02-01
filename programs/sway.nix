@@ -68,7 +68,7 @@
       ];
     };
 
-    waybar.enable = true;
+    # waybar.enable = true;
   };
 
   services = {
