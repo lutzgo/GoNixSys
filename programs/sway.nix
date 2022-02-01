@@ -114,22 +114,20 @@
       };
     };
 
-    # services.mako = {
-    #   Unit = {
-    #     Description = "Mako notification daemon";
-    #     PartOf = [ "graphical-session.target" ];
-    #   };
-    #   Install = {
-    #     WantedBy = [ "graphical-session.target" ];
-    #   };
-    #   Service = {
-    #     Type = "dbus";
-    #     BusName = "org.freedesktop.Notifications";
-    #     ExecStart = "${pkgs.mako}/bin/mako";
-    #     RestartSec = 5;
-    #     Restart = "always";
-    #   };
-    # };
+    services.mako = {
+      description = "Mako notification daemon";
+      wantedBy = [ "graphical-session.target" ];
+      partOf = [ "graphical-session.target" ];
+      serviceConfig = {
+        Type = "dbus";
+        BusName = "org.freedesktop.Notifications";
+        ExecStart = ''
+          ${pkgs.mako}/bin/mako"
+        '';
+        RestartSec = 5;
+        Restart = "always";
+      };
+    };
 
     services.sway = {
       description = "Sway - Wayland window manager";
