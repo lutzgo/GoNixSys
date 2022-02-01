@@ -16,7 +16,7 @@
 
   services.greetd = {
     greetd.enable = true;
-    greetd.setting = {
+    greetd.settings = {
       default_session = {
         command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
       };
