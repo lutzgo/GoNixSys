@@ -157,9 +157,9 @@ in {
 
       startup = [
         # Status bar: waybar
-        { command = "waybar"; }
+        # { command = "waybar"; }
         # Notification daemon
-        { command = "mako"; }
+        # { command = "mako"; }
         # Polkit
         { command = "/run/current-system/sw/libexec/polkit-gnome-authentication-agent-1"; }
         # Idle
