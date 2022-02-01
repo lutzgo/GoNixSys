@@ -16,7 +16,7 @@
 
   xserver.enable = true;
   services.xserver.displayManager = {
-    defaultSession = sway;
+    defaultSession = "sway";
     gdm = {
       enable = true;
       wayland = true;
