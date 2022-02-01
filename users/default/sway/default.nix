@@ -165,7 +165,7 @@ in {
         # Idle
         # { command = "$HOME/.config/sway/idle.sh"; }
         # SessionTarget
-        { command = "systemctl --user import-environment; systemctl --user start sway-session.target" }
+        { command = "systemctl --user import-environment; systemctl --user start sway-session.target"; }
         # Journalctl
         { command = "systemd-cat --identifier=sway sway"; }
       ];
