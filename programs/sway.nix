@@ -37,7 +37,6 @@
         foot
         grim
         mako
-        pactl
         slurp
         swaylock
         swayidle
