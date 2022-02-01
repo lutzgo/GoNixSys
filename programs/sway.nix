@@ -157,7 +157,7 @@
       serviceConfig = {
         Type = "simple";
         ExecStart = ''
-          ${waybar}/bin/waybar
+          ${pkgs.waybar}/bin/waybar
           '';
         RestartSec = 5;
         Restart = "always";
