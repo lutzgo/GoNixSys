@@ -77,6 +77,8 @@
     #   # Redshift with wayland support isn't present in nixos-19.09 atm. You have to cherry-pick the commit from https://github.com/NixOS/nixpkgs/pull/68285 to do that.
     #   package = pkgs.redshift-wlr;
     # };
+    kanshi.enable.true;
+    mako.enable.true;
 
     xserver = {
       enable = true;
@@ -88,6 +90,8 @@
         };
       };
     };
+
+    waybar.enable.true;
   };
 
   systemd.user = {
@@ -102,6 +106,7 @@
     services.kanshi = {
       description = "Kanshi output autoconfig ";
       wantedBy = [ "graphical-session.target" ];
+      # bindsTo = [ "sway-session.target" ];
       partOf = [ "graphical-session.target" ];
       serviceConfig = {
         Type = "simple";
