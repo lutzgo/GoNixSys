@@ -35,7 +35,7 @@ in {
       right = right;
       keybindings = {
         # Exit sway (logs you out of your Wayland session)
-        "${modifier}+Shift+e" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'";
+        "${modifier}+Shift+e" = "exec swaynag -t warning -m 'd' -b 'Yes, exit sway' 'swaymsg exit'";
         # Reload the configuration file
         "${modifier}+Shift+r" = "reload";
         # Kill focused window
