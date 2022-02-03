@@ -151,11 +151,11 @@ in {
             "escape" = true;
             "exec" = "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"; # Script in resources folder
           };
-          "custom/power" = {
-            format = "";
-            on-click = "swaynag --border-bottom-size=3 --message-padding=8 --button-border-size=5 --button-padding=8 --background=${colorScheme.yellow} --border-bottom=${colorScheme.yellowDarker} --button-border=${colorScheme.greyLight} --button-background=${colorScheme.white} -f Roboto -t warning -m 'Power Menu Options' -b '⏻︁ Power off'  'shutdown -P now' -b '↻︁ Restart' 'shutdown -r now' -b '🛌︁ Hibernate' 'systemctl hibernate' -b '🛌︁ Hybrid-sleep' 'systemctl hybrid-sleep' -b '🛌︁ Suspend' 'systemctl suspend' -b '︁ Logout' 'swaymsg exit' -b ' Lock' 'swaylock-fancy -f Roboto'";
-            #on-click = "sh $HOME/.config/waybar/power-menu.sh";
-          };
+          # "custom/power" = {
+          #   format = "";
+          #   on-click = "swaynag --border-bottom-size=3 --message-padding=8 --button-border-size=5 --button-padding=8 --background=${colorScheme.yellow} --border-bottom=${colorScheme.yellowDarker} --button-border=${colorScheme.greyLight} --button-background=${colorScheme.white} -f Roboto -t warning -m 'Power Menu Options' -b '⏻︁ Power off'  'shutdown -P now' -b '↻︁ Restart' 'shutdown -r now' -b '🛌︁ Hibernate' 'systemctl hibernate' -b '🛌︁ Hybrid-sleep' 'systemctl hybrid-sleep' -b '🛌︁ Suspend' 'systemctl suspend' -b '︁ Logout' 'swaymsg exit' -b ' Lock' 'swaylock-fancy -f Roboto'";
+          #   #on-click = "sh $HOME/.config/waybar/power-menu.sh";
+          # };
           "custom/gpu" = {
             # Use either the next line or the second and third next line
             "exec" = "command -v radeontop >/dev/null 2>&1 && radeontop -d - -l 1 | tr -d '\n' | cut -s -d ',' -f3 | cut -s -d ' ' -f3 | tr -d '%' | awk '{ print $1 }' | tr -d '\n' || echo 'No radeontop'";
