@@ -15,6 +15,7 @@
   home.stateVersion = "20.09";
 
   imports = [
+    ./brave.nix
     # ./alacritty.nix
     # ./mako.nix
     ./fish.nix
