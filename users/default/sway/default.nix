@@ -1,20 +1,20 @@
 { config, pkgs, fetchurl, ... }:
 
 let
-  colorScheme = import ../../../color-schemes/nord.nix;
+  # colorScheme = import ../../../color-schemes/nord.nix;
   #background = "$HOME/.cache/backgrounds/nix-wallpaper-3d-showcase.png";
-  background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
+  # background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
   modifier = "Mod4";
   left = "h";
   down = "j";
   up = "k";
   right = "l";
   resizeAmount = "30px";
-  menu = "wofi";
-  filebrowser = "nemo";
+  # menu = "wofi";
+  # filebrowser = "nemo";
   webbrowser = "brave";
-  webbrowserPersistent = "firefox";
-  musicplayer = "spotify";
+  # webbrowserPersistent = "firefox";
+  # musicplayer = "spotify";
 in {
 
   wayland.windowManager.sway = {
@@ -166,9 +166,9 @@ in {
         # Idle
         # { command = "$HOME/.config/sway/idle.sh"; }
         # SessionTarget
-        { command = "systemctl --user import-environment; systemctl --user start sway-session.target"; }
+        # { command = "systemctl --user import-environment; systemctl --user start sway-session.target"; }
         # Journalctl
-        { command = "systemd-cat --identifier=sway sway"; }
+        # { command = "systemd-cat --identifier=sway sway"; }
       ];
     };
   };
