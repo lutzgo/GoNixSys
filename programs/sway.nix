@@ -55,20 +55,9 @@
       enable = true;
       settings = {
         default_session = {
-          command = "${pkgs.greetd.gtkgreet}/bin/agreety --cmd sway";
+          command = "${pkgs.greetd.gtkgreet}/bin/gtkgreet --cmd sway";
         };
       };
-    };
-
-    xserver = {
-      enable = true;
-      # displayManager = {
-      #   defaultSession = "sway";
-      #   gdm = {
-      #     enable = true;
-      #     wayland = true;
-      #   };
-      # };
     };
 
   };
