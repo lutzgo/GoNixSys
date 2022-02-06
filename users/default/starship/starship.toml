@@ -13,7 +13,7 @@ $character
 
 add_newline = false
 command_timeout = 1000
-right_format = time
+right_format = "time"
 
 [aws]
 symbol = "  "
