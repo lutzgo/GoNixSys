@@ -12,6 +12,5 @@
     ./programs/nano.nix
     # ./programs/nushell.nix
     ./programs/security.nix
-    ./programs/sway.nix
   ];
 }

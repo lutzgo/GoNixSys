@@ -5,7 +5,8 @@
   environment = {
     systemPackages = with pkgs; [
       #### Display-Manager #### 
-      gnome.gdm
+      greetd.greetd
+      greetd.gtkgreet
       polkit
       polkit_gnome
       sway

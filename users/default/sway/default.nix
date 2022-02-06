@@ -18,6 +18,23 @@ let
 in {
 
   wayland.windowManager.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+    home.packages = with pkgs; [
+      brightnessctl
+      dmenu
+      foot
+      grim
+      kanshi
+      mako
+      slurp
+      swaylock
+      swayidle
+      waybar
+      wl-clipboard
+      wofi
+      wofi-emoji
+    ];
     config = {
       # bars 
       floating.border = 1;
