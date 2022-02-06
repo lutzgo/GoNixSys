@@ -19,6 +19,7 @@ in {
 
   wayland.windowManager.sway = {
     config = {
+      # bars 
       floating.border = 1;
       gaps = {
         smartBorders = "on";
