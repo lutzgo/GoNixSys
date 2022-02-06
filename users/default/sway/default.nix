@@ -10,7 +10,7 @@ let
   up = "k";
   right = "l";
   resizeAmount = "30px";
-  # menu = "wofi";
+  menu = "wofi";
   # filebrowser = "nemo";
   webbrowser = "brave";
   # webbrowserPersistent = "firefox";
@@ -28,7 +28,7 @@ in {
       window.border = 1;
 
       #### Keys ####
-      # menu = menu;
+      menu = menu;
       modifier = modifier;
       left = left;
       down = down;
