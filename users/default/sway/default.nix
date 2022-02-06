@@ -89,7 +89,7 @@ in
         "${modifier}+Shift+r" = "reload";
         # Kill focused window
         "${modifier}+Shift+q" = "kill";
-        "${modifier}+space" = "exec ${menu}";
+        "${modifier}+Space" = "exec ${menu}";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
         "${modifier}+x" = "exec foot";
         # Take a screenshot by selecting an area
