@@ -95,7 +95,7 @@ in
         # Take a screenshot by selecting an area
         "print" = "exec sh $HOME/.config/sway/screenshot.sh";
         # Scan a barcode on the screen
-        "pause" = "exec sh $HOME/.config/sway/scan-barcode.sh";
+        # "pause" = "exec sh $HOME/.config/sway/scan-barcode.sh";
         "${modifier}+f7" = "exec ${filebrowser}";
         "${modifier}+f8" = "exec ${webbrowser}";
         "${modifier}+f9" = "exec ${webbrowserPersistent}";
