@@ -14,16 +14,24 @@ $character
 add_newline = false
 command_timeout = 1000
 
-[username]
-style_user = "yellow"
-style_root = "red"
-format = "[$user]($style)"
-show_always = false
+[aws]
+symbol = "  "
 
-[hostname]
-ssh_only = true
-format = "[@$hostname]($style) in "
-style = "green"
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](green)"
+vicmd_symbol = "[](purple)"
+
+[cmd_duration]
+min_time = "2_000"
+format = "took [$duration]($style) "
+style = "yellow"
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
 
 [directory]
 truncation_length = 3
@@ -33,6 +41,18 @@ read_only = " "
 truncation_symbol = "../"
 truncate_to_repo = true
 fish_style_pwd_dir_length = 1
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fill]
+symbol = " "
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
@@ -54,8 +74,55 @@ staged = " "
 renamed = " "
 deleted = " "
 
-[fill]
-symbol = " "
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_only = true
+format = "[@$hostname]($style) in "
+style = "green"
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
 
 [status]
 disabled = false
@@ -64,12 +131,11 @@ symbol = "✘ "
 success_symbol = "✔ "
 style = "red"
 
-[cmd_duration]
-min_time = "2_000"
-format = "took [$duration]($style) "
-style = "yellow"
+[swift]
+symbol = "ﯣ "
 
-[character]
-success_symbol = "[](green)"
-error_symbol = "[](green)"
-vicmd_symbol = "[](purple)"
+[username]
+style_user = "yellow"
+style_root = "red"
+format = "[$user]($style)"
+show_always = false
