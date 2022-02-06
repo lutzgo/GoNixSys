@@ -28,7 +28,7 @@ in {
       window.border = 1;
 
       #### Keys ####
-      menu = menu;
+      # menu = menu;
       modifier = modifier;
       left = left;
       down = down;
