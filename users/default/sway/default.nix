@@ -29,6 +29,7 @@ in
       floating.border = 1;
       window.border = 1;
       bars = [ ];
+
       colors = {
         focused = {
           background = colorScheme.green;
@@ -59,6 +60,20 @@ in
           text = colorScheme.black;
         };
         background = colorScheme.black;
+      };
+
+      fonts = {
+        names = [ "Roboto" ];
+        style = "Regular Bold";
+        size = 12.0;
+      };
+      input = {
+        "*" = {
+          xkb_layout = "de";
+          xkb_variant = "nodeadkeys";
+          xkb_options = "grp:alt_shift_toggle";
+          xkb_numlock = "enable";
+        };
       };
     };
   };
