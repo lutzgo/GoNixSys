@@ -21,6 +21,14 @@
   wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
+    config = {
+      gaps = {
+        smartBorders = "on";
+        smartGaps = true;
+      };
+      floating.border = 1;
+      window.border = 1;
+    };
   };
 
   home.packages = with pkgs; [
