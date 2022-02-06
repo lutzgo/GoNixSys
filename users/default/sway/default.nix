@@ -89,9 +89,9 @@ in
         "${modifier}+Shift+r" = "reload";
         # Kill focused window
         "${modifier}+Shift+q" = "kill";
-        "${modifier}+d" = "exec ${menu}";
+        "${modifier}+space" = "exec ${menu}";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
-        "${modifier}+x" = "exec kitty";
+        "${modifier}+x" = "exec foot";
         # Take a screenshot by selecting an area
         "print" = "exec sh $HOME/.config/sway/screenshot.sh";
         # Scan a barcode on the screen
@@ -218,8 +218,6 @@ in
         { command = "mako"; }
         # Polkit
         { command = "/run/current-system/sw/libexec/polkit-gnome-authentication-agent-1"; }
-        # Idle
-        { command = "$HOME/.config/sway/idle.sh"; }
       ];
 
       terminal = pkgs.foot;
