@@ -37,6 +37,27 @@
       };
     };
     nixosConfigurations = {
+      ursula = lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./flake-default-modules.nix
+          ./hardware/ursula.nix
+          ./network/ursula.nix
+          ./system/ursula.nix
+          ./users/default.nix
+          ./.secrets/system/ursula.nix
+          ./packages/sway.nix
+          ./programms/greetd.nix
+          # nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
+          # ./packages/extra.nix
+          #./programs/openrgb.nix
+          # ./programs/obs-studio.nix
+          # ./programs/gaming.nix
+          # ./programs/printing-scanning/default.nix
+          # ./programs/printing-scanning/hplip.nix
+        ];
+      };
+
       peter = lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
