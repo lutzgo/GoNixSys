@@ -21,7 +21,9 @@
   wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
-    home.packages = with pkgs; [
+  };
+
+  home.packages = with pkgs; [
       brightnessctl
       dmenu
       foot
@@ -36,6 +38,5 @@
       wofi
       wofi-emoji
     ];
-  };
 
 }
