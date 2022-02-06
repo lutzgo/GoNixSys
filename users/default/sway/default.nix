@@ -96,11 +96,11 @@ in
         "print" = "exec sh $HOME/.config/sway/screenshot.sh";
         # Scan a barcode on the screen
         # "pause" = "exec sh $HOME/.config/sway/scan-barcode.sh";
-        "${modifier}+f7" = "exec ${filebrowser}";
-        "${modifier}+f8" = "exec ${webbrowser}";
-        "${modifier}+f9" = "exec ${webbrowserPersistent}";
-        "${modifier}+f10" = "exec ${musicplayer}";
-        # Toggle deafen
+        # "${modifier}+f7" = "exec ${filebrowser}";
+        # "${modifier}+f8" = "exec ${webbrowser}";
+        # "${modifier}+f9" = "exec ${webbrowserPersistent}";
+        # "${modifier}+f10" = "exec ${musicplayer}";
+        # # Toggle deafen
         "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
         # Toggle mute
         "XF86AudioMute+Ctrl" = "exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && ffmpeg -y -f lavfi -i 'sine=frequency=200:duration=0.1' /tmp/sound.ogg && play /tmp/sound.ogg";
