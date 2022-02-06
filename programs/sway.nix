@@ -104,7 +104,7 @@
     };
 
     services.kanshi = {
-      enable = true,
+      enable = true;
       description = "Kanshi output autoconfig ";
       wantedBy = [ "graphical-session.target" ];
       # bindsTo = [ "sway-session.target" ];
