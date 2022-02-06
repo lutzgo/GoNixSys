@@ -17,11 +17,17 @@ let
 in
 {
 
+  home = {
+    file = {
+      ".cache/backgrounds/greatwave_nord.jpg".source = ../../../backgrounds/greatwave_nord.jpg;
+    };
+
   wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
     config = {
       gaps = {
+        outer = 5;
         smartBorders = "on";
         smartGaps = true;
       };
