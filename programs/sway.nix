@@ -77,8 +77,8 @@
           command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
         };
       };
-    }
     };
+
     # redshift = {
     #   enable = true;
     #   # Redshift with wayland support isn't present in nixos-19.09 atm. You have to cherry-pick the commit from https://github.com/NixOS/nixpkgs/pull/68285 to do that.
