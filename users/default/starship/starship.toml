@@ -19,9 +19,9 @@ command_timeout = 1000
 symbol = "  "
 
 [character]
-success_symbol = "[](green)"
-error_symbol = "[](green)"
-vicmd_symbol = "[](purple)"
+success_symbol = "[❯❯](green)"
+error_symbol = "[❯❯](green)"
+vicmd_symbol = "[❯❯](purple)"
 
 [cmd_duration]
 min_time = "2_000"
