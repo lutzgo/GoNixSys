@@ -83,7 +83,7 @@ symbol = " "
 
 [hostname]
 ssh_only = true
-format = "[@$hostname]($style) in "
+format = "[@$hostname]($style) [❯] "
 style = "green"
 
 [java]
@@ -134,6 +134,11 @@ style = "red"
 
 [swift]
 symbol = "ﯣ "
+
+[time]
+disabled = false
+time_format = "%Y-%m-%d %H:%M:%S"
+utc_time_offset = "+10"
 
 [username]
 style_user = "yellow"
