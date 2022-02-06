@@ -60,9 +60,9 @@
       };
     };
 
-    kanshi.enable.true;
-    mako.enable.true;
-    waybar.enable.true;
+    kanshi.enable = true;
+    mako.enable = true;
+    waybar.enable = true;
 
     # redshift = {
     #   enable = true;
