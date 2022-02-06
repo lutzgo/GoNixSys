@@ -1,7 +1,7 @@
 { config, pkgs, fetchurl, ... }:
 
-# let
-#   # colorScheme = import ../../../color-schemes/nord.nix;
+let
+  colorScheme = import ../../../color-schemes/nord.nix;
 #   #background = "$HOME/.cache/backgrounds/nix-wallpaper-3d-showcase.png";
 #   # background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
 #   modifier = "Mod4";
@@ -15,7 +15,7 @@
 #   webbrowser = "brave";
 #   # webbrowserPersistent = "firefox";
 #   # musicplayer = "spotify";
-# in
+in
 {
 
   wayland.windowManager.sway = {
@@ -28,6 +28,38 @@
       };
       floating.border = 1;
       window.border = 1;
+      bars = [ ];
+      colors = {
+        focused = {
+          background = colorScheme.green;
+          border = colorScheme.greenBright;
+          childBorder= colorScheme.green;
+          indicator = colorScheme.green;
+          text = colorScheme.black;
+        };
+        focusedInactive = {
+          background = colorScheme.yellow;
+          border = colorScheme.yellowBright;
+          childBorder= colorScheme.yellow;
+          indicator = colorScheme.yellow;
+          text = colorScheme.black;
+        };
+        unfocused = {
+          background = colorScheme.magenta;
+          border = colorScheme.magentaBright;
+          childBorder= colorScheme.magenta;
+          indicator = colorScheme.magenta;
+          text = colorScheme.black;
+        };
+        urgent = {
+          background = colorScheme.red;
+          border = colorScheme.redBright;
+          childBorder= colorScheme.red;
+          indicator = colorScheme.red;
+          text = colorScheme.black;
+        };
+        background = colorScheme.black;
+      };
     };
   };
 
