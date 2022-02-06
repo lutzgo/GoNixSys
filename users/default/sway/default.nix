@@ -2,8 +2,7 @@
 
 let
   colorScheme = import ../../../color-schemes/nord.nix;
-#   #background = "$HOME/.cache/backgrounds/nix-wallpaper-3d-showcase.png";
-#   # background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
+  background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
   modifier = "Mod4";
   left = "h";
   down = "j";
@@ -89,7 +88,7 @@ in
         "${modifier}+Shift+r" = "reload";
         # Kill focused window
         "${modifier}+Shift+q" = "kill";
-        "${modifier}+Space" = "exec ${menu}";
+        "${modifier}+d" = "exec ${menu}";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
         "${modifier}+x" = "exec foot";
         # Take a screenshot by selecting an area
@@ -223,6 +222,11 @@ in
       terminal = pkgs.foot;
       window.titlebar = false;
       workspaceAutoBackAndForth = true;
+
+      output = {
+        "*" = { bg = "${background} fit #000000"; };
+        # You can get the names of your outputs by running: swaymsg -t get_outputs
+      };
     };
   };
 
