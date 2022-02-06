@@ -27,7 +27,6 @@
 # ];
 
   programs = {
-    light.enable = true;
 
     sway = {
       enable = true;
