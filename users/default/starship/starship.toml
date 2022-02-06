@@ -13,6 +13,7 @@ $character
 
 add_newline = false
 command_timeout = 1000
+right_format = time
 
 [aws]
 symbol = "  "
@@ -35,7 +36,7 @@ symbol = " "
 
 [directory]
 truncation_length = 3
-format = "\❯[$path]($style)[$read_only]($read_only_style) "
+format = "[$path]($style)[$read_only]($read_only_style) "
 style = "blue"
 read_only = " "
 truncation_symbol = "../"
@@ -55,7 +56,7 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-format = "on [$symbol$branch]($style) "
+format = "[$symbol$branch]($style) "
 style = "purple"
 symbol = " "
 
