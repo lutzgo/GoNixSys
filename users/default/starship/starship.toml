@@ -1,5 +1,5 @@
 format = """
-[\uE0B6]
+[\uE0B6]\
 $username\
 $hostname\
 $directory\
