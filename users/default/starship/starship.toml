@@ -53,7 +53,7 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-format = "[$symbol$branch]($style) "
+format = "[ \ue709 $symbol$branch]($style)"
 style = "bg:purple fg:white"
 symbol = " "
 
@@ -138,7 +138,7 @@ time_format = "%Y-%m-%d %H:%M:%S"
 utc_time_offset = "+10"
 
 [username]
-style_user = "bg:white fg:black"
-style_root = "bg:white fg:red "
-format = "[$user]($style)"
+style_user = "bg:yellow fg:black"
+style_root = "bg:red fg:black "
+format = "[ \uf2c0 $user]($style)"
 show_always = false
