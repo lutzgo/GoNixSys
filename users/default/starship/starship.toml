@@ -1,5 +1,6 @@
 format = """
-[\uE0B6](white)$username$hostname[\uE0B4](bg:blue fg:white)\
+[\uE0B6](green)$sudo\
+[\uE0B6](bg:green fg:white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus[\uE0B4](purple)\
 $fill\
@@ -22,7 +23,7 @@ vicmd_symbol = "[ \uf6d7](green)"
 
 [cmd_duration]
 min_time = "2_000"
-format = "[\ufa1e $duration]($style) "
+format = "[\ufa1e $duration]($style)"
 style = "bg:yellow fg:black"
 
 [conda]
@@ -131,6 +132,12 @@ format = '[$symbol]($style)'
 symbol = "✘"
 success_symbol = "✔"
 style = "red"
+
+[sudo]
+format = [$symbol]($style)"
+style = "bg:green fg:black"
+symbol = "\uf5e7 "
+disabled = false
 
 [time]
 format = "[\uf64f $time]($style)"
