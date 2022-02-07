@@ -81,7 +81,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format = "[@$hostname]($style)"
-style = "bg:white fg:white"
+style = "bg:dark-green fg:white"
 
 [java]
 symbol = " "
@@ -138,7 +138,7 @@ time_format = "%Y-%m-%d %H:%M:%S"
 utc_time_offset = "+10"
 
 [username]
-style_user = "bg:yellow fg:white"
-style_root = "gb:red fg:white "
+style_user = "bg:dark-yellow fg:white"
+style_root = "gb:dark-red fg:white "
 format = "[$user]($style)"
 show_always = false
