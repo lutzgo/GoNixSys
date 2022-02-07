@@ -1,12 +1,10 @@
 format = """
-[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)
-[ ](white)
-[ ](white)$character """
+[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$all[\uE0B4](purple)
+$character """
 
 right_format = """
 [ ](white)$time
-[ ](white)
-[ ](white)$character """
+[ ](white) """
 
 add_newline = false
 command_timeout = 1000
@@ -81,7 +79,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format = "[@$hostname]($style)"
-style = "bg:dark-green fg:white"
+style = "bg:white fg:green"
 
 [java]
 symbol = " "
