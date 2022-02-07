@@ -134,7 +134,7 @@ success_symbol = "✔"
 style = "red"
 
 [sudo]
-format = [$symbol]($style)"
+format = "[$symbol]($style)"
 style = "bg:green fg:black"
 symbol = "\uf5e7 "
 disabled = false
