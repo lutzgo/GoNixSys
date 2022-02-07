@@ -1,5 +1,5 @@
 format = """
-[\uE0B6](white)$username[\uE0B0](white)$hostname
+[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)
 [ ](white)
 [ ](white)$character """
 
