@@ -1,5 +1,5 @@
 format = """
-$username\
+\uE0B6](fg:#1C4961)[$username](bg:#1C4961)
 $hostname\
 $directory\
 $git_branch\
