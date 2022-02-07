@@ -1,5 +1,5 @@
 format = """
-[┌─](white)$username$hostname$directory$git_branch$git_status$fill$status
+[┌─>](white)$all
 [│](white)
 [└─>](white)$character
 """
