@@ -1,5 +1,5 @@
 format = """
-[uE0BC] $username\
+$username\
 $hostname\
 $directory\
 $git_branch\
@@ -143,5 +143,5 @@ utc_time_offset = "+10"
 [username]
 style_user = "bg:black fg:yellow"
 style_root = "gb:black fg:red "
-format = "[$user]($style)"
+format = "[\uE0B6][$user]($style)"
 show_always = false
