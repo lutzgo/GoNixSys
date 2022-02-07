@@ -2,9 +2,11 @@ format = """
 [\uE0B6](white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus[\uE0B4](purple)\
-$fill[\uE0B6](bg:white fg:yellow)$cmd_duration\
+$fill\
+[\uE0B6](bg:white fg:yellow)$cmd_duration\
 [\uE0B6](white)$time[\uE0B4](white)
-$character """
+$character
+"""
 
 
 add_newline = false
@@ -22,7 +24,7 @@ vicmd_symbol = "[ \uf6d7](green)"
 [cmd_duration]
 min_time = "2_000"
 format = "[\ufa1e $duration]($style) "
-style = "yellow"
+style = "bg:yellow fg:black"
 
 [conda]
 symbol = " "
