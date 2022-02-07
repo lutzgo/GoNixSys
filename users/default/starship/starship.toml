@@ -5,8 +5,8 @@ $git_branch$gitstatus[\uE0B4](purple)\
 $fill\
 # [\uE0B6](black)$status\
 # [\uE0B6](bg:black fg:yellow)$cmd_duration\
-[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)\
-$linebreak\
+[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)
+# $linebreak\
 $character
 """
 
