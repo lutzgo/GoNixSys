@@ -1,5 +1,6 @@
 format = """
-[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$git$gitstatus[\uE0B4](purple)
+[\uE0B6](grey)$username$hostname[\uE0B4](bg:blue fg:grey)\
+$directory[\uE0B4](blue)$git$gitstatus[\uE0B4](purple)
 $character """
 
 right_format = """
@@ -79,7 +80,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format = "[@$hostname]($style)"
-style = "bg:white fg:green"
+style = "bg:grey fg:green"
 
 [java]
 symbol = " "
@@ -136,7 +137,7 @@ time_format = "%Y-%m-%d %H:%M:%S"
 utc_time_offset = "+10"
 
 [username]
-style_user = "bg:white fg:yellow"
-style_root = "bg:white fg:red "
+style_user = "bg:grey fg:yellow"
+style_root = "bg:grey fg:red "
 format = "[$user]($style)"
 show_always = false
