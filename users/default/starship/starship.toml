@@ -2,8 +2,8 @@ format = """
 [\uE0B6](white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus[\uE0B4](purple)\
-$fill[\uE0B6](white)$time[\uE0B4](fg:white)
-$status """
+$fill[\uE0B6](bg:white fg:black)$time[\uE0B4](bg:white fg:black)
+$character """
 
 
 add_newline = false
@@ -14,8 +14,8 @@ command_timeout = 1000
 symbol = "  "
 
 [character]
-success_symbol = "[ \ufadf](green)"
-error_symbol = "[ ✘](red)"
+success_symbol = "[ \ufcb5](green)"
+error_symbol = "[ \ufcb5](red)"
 
 [cmd_duration]
 min_time = "2_000"
