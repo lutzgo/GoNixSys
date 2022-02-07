@@ -84,7 +84,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format = "[@$hostname]($style)"
-style = "green"
+style = "bg:bright-black fg:green"
 
 [java]
 symbol = " "
