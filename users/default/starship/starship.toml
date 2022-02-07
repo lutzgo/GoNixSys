@@ -3,7 +3,7 @@ format = """
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus[\uE0B4](purple)\
 $fill[\uE0B6](white)$time[\uE0B4](fg:white)
-$character """
+$status """
 
 
 add_newline = false
@@ -14,8 +14,8 @@ command_timeout = 1000
 symbol = "  "
 
 [character]
-success_symbol = "[\ufadf](green)"
-error_symbol = "[✘](red)"
+success_symbol = "[ \ufadf](green)"
+error_symbol = "[ ✘](red)"
 
 [cmd_duration]
 min_time = "2_000"
@@ -121,9 +121,9 @@ symbol = " "
 
 [status]
 disabled = false
-format = '[ $symbol]($style) '
-symbol = "✘ "
-success_symbol = "✔ "
+format = '[$symbol]($style)'
+symbol = " ✘"
+success_symbol = " ✔"
 style = "red"
 
 [swift]
