@@ -1,6 +1,6 @@
 format = """
-[ ][\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$all[\uE0B4](purple)
-[ ]$character """
+[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$all[\uE0B4](purple)
+$character """
 
 right_format = """
 [ ](white)$time
@@ -14,9 +14,9 @@ command_timeout = 1000
 symbol = "  "
 
 [character]
-success_symbol = "(green)"
-error_symbol = "(green)"
-vicmd_symbol = "(purple)"
+success_symbol = "[壟](green)"
+error_symbol = "[壟](green)"
+vicmd_symbol = "[壟](purple)"
 
 [cmd_duration]
 min_time = "2_000"
