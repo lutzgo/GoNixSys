@@ -2,7 +2,7 @@ format = """
 [\uE0B6](green)$sudo\
 [\uE0B6](bg:green fg:white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
-$git_branch$gitstatus[\uE0B4](purple)\
+$git_branch$gitstatus$git_state[\uE0B4](purple)\
 $fill\
 [\uE0B6](black)$status\
 [\uE0B6](bg:black fg:yellow)$cmd_duration\
@@ -72,6 +72,10 @@ modified = " "
 staged = " "
 renamed = " "
 deleted = " "
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\)'
+style = "bg:purple fg:purple"
 
 [golang]
 symbol = " "
