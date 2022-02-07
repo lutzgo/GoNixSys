@@ -1,5 +1,5 @@
 format = """
-[ ](white)$all
+[ \uE0B6 ](white)$all
 [ ](white)
 [ ](white)$character """
 
