@@ -15,9 +15,6 @@ add_newline = false
 command_timeout = 1000
 
 
-[aws]
-symbol = "  "
-
 [character]
 success_symbol = "[ \uf6d7](green)"
 error_symbol = "[ \uf6d7](red)"
@@ -38,13 +35,13 @@ symbol = " "
 truncation_length = 3
 format = "[ \uF413 $path]($style)[$read_only]($read_only_style)"
 style = "bg:blue fg:white"
-read_only = " "
+read_only = " \uf023"
 truncation_symbol = "../"
 truncate_to_repo = true
 fish_style_pwd_dir_length = 1
 
 [docker_context]
-symbol = " "
+symbol = "\uf308 "
 
 [elixir]
 symbol = " "
@@ -56,9 +53,9 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-format = "[ \ue709 $symbol$branch]($style)"
+format = "[ \uf113 $symbol$branch]($style)"
 style = "bg:purple fg:white"
-symbol = " "
+symbol = "\ue725 "
 
 [git_status]
 format = '([$all_status$ahead_behind]($style))'
@@ -131,12 +128,9 @@ symbol = " "
 [status]
 disabled = false
 format = '[$symbol]($style)'
-symbol = " ✘"
-success_symbol = " ✔"
+symbol = "✘"
+success_symbol = "✔"
 style = "red"
-
-[swift]
-symbol = "ﯣ "
 
 [time]
 format = "[\uf64f $time]($style)"
