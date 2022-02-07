@@ -1,5 +1,5 @@
 format = """
-[ \uE0B6 ](white)$all
+[\uE0B6](white)$username[\uE0B0](white)$hostname
 [ ](white)
 [ ](white)$character """
 
@@ -138,7 +138,7 @@ time_format = "%Y-%m-%d %H:%M:%S"
 utc_time_offset = "+10"
 
 [username]
-style_user = "bg:dark-yellow fg:white"
-style_root = "gb:dark-red fg:white "
+style_user = "bg:white fg:yellow"
+style_root = "bg:white fg:red "
 format = "[$user]($style)"
 show_always = false
