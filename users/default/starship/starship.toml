@@ -1,12 +1,12 @@
 format = """
-[┌─>](white)$all
+[┌─](white)$all
 [│](white)
-[└─>](white)$character
-"""
+[└─](white)$character """
 
 right_format = """
-$time\
-"""
+[u00ac](white)$time
+[│](white)
+[u00ac](white)$character """
 
 add_newline = false
 command_timeout = 1000
