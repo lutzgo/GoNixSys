@@ -1,14 +1,11 @@
 format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_status\
-$fill\
-$status\
-$time\
-[│]
-[└─>]$character
+[┌─](white)$username$hostname$directory$git_branch$git_status$fill$status
+[│](white)
+[└─>](white)$character
+"""
+
+right_format = """
+$time
 """
 
 add_newline = false
@@ -142,5 +139,5 @@ utc_time_offset = "+10"
 [username]
 style_user = "bg:black fg:yellow"
 style_root = "gb:black fg:red "
-format = "[$symbol][$user]($style)"
+format = "[$user]($style)"
 show_always = false
