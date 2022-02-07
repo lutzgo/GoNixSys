@@ -6,7 +6,7 @@ $git_branch$gitstatus$git_state[\uE0B4](purple)\
 $fill\
 [\uE0B6](black)$status\
 [\uE0B6](bg:black fg:yellow)$cmd_duration\
-[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)
+[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)\
 $linebreak\
 $character
 """
@@ -138,7 +138,7 @@ success_symbol = "✔"
 style = "red"
 
 [sudo]
-format = "[ $symbol]($style)"
+format = "[$symbol]($style)"
 style = "bg:green fg:black"
 symbol = "\uf5e7 "
 disabled = false
@@ -153,5 +153,5 @@ style = "bg:white fg:black"
 [username]
 style_user = "bg:white fg:black"
 style_root = "bg:white fg:black "
-format = "[ \uf2c0$user]($style)"
+format = "[\uf2c0$user]($style)"
 show_always = false
