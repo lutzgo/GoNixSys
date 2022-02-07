@@ -1,5 +1,5 @@
 format = """
-[┌─]$username\
+$username\
 $hostname\
 $directory\
 $git_branch\
@@ -142,5 +142,5 @@ utc_time_offset = "+10"
 [username]
 style_user = "bg:black fg:yellow"
 style_root = "gb:black fg:red "
-format = "[ $symbol][$user]($style)"
+format = "[$symbol][$user]($style)"
 show_always = false
