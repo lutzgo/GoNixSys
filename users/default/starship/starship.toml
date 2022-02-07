@@ -128,7 +128,7 @@ symbol = " "
 symbol = " "
 
 [shell]
-format = "[$indicator]($style)"
+format = "[$indicator ]($style)"
 bash_indicator = "\ufcb5"
 fish_indicator = "\uf739"
 powershell_indicator = "\uf68c"
