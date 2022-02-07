@@ -1,5 +1,5 @@
 format = """
-[ ][\uE0B6](green)$sudo\
+[\uE0B6](green)$sudo\
 [\uE0B6](bg:green fg:white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus$git_state[\uE0B4](purple)\
@@ -138,7 +138,7 @@ success_symbol = "✔"
 style = "red"
 
 [sudo]
-format = "[$symbol]($style)"
+format = "[ $symbol]($style)"
 style = "bg:green fg:black"
 symbol = "\uf5e7 "
 disabled = false
