@@ -1,6 +1,6 @@
 format = """
-[\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$all[\uE0B4](purple)
-$character """
+[ ][\uE0B6](white)$username$hostname[\uE0B4](white)$directory[\uE0B4](blue)$all[\uE0B4](purple)
+[ ]$character """
 
 right_format = """
 [ ](white)$time
