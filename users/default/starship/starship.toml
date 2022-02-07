@@ -1,6 +1,5 @@
 format = """
-[\uE0B6]\
-$username\
+[uE0BC] $username\
 $hostname\
 $directory\
 $git_branch\
@@ -15,7 +14,7 @@ $character
 add_newline = false
 command_timeout = 1000
 
-
+uE0BC
 [aws]
 symbol = "  "
 
