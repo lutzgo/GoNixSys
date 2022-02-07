@@ -1,12 +1,12 @@
 format = """
-[┌─](white)$all
-[│](white)
-[└─](white)$character """
+[ ](white)$all
+[ ](white)
+[ ](white)$character """
 
 right_format = """
-[u00ac](white)$time
-[│](white)
-[u00ac](white)$character """
+[ ](white)$time
+[ ](white)
+[ ](white)$character """
 
 add_newline = false
 command_timeout = 1000
@@ -34,7 +34,7 @@ symbol = " "
 [directory]
 truncation_length = 3
 format = "[$path]($style)[$read_only]($read_only_style) "
-style = "blue"
+style = "bg:blue fg:white"
 read_only = " "
 truncation_symbol = "../"
 truncate_to_repo = true
@@ -54,12 +54,12 @@ symbol = " "
 
 [git_branch]
 format = "[$symbol$branch]($style) "
-style = "purple"
+style = "bg:purple fg:white"
 symbol = " "
 
 [git_status]
 format = '([$all_status$ahead_behind]($style) )'
-style = "purple"
+style = "bg:purple fg:purple"
 conflicted = " "
 ahead = " "
 behind = " "
@@ -81,7 +81,7 @@ symbol = " "
 [hostname]
 ssh_only = true
 format = "[@$hostname]($style)"
-style = "bg:bright-black fg:green"
+style = "bg:white fg:white"
 
 [java]
 symbol = " "
@@ -138,7 +138,7 @@ time_format = "%Y-%m-%d %H:%M:%S"
 utc_time_offset = "+10"
 
 [username]
-style_user = "bg:black fg:yellow"
-style_root = "gb:black fg:red "
+style_user = "bg:yellow fg:white"
+style_root = "gb:red fg:white "
 format = "[$user]($style)"
 show_always = false
