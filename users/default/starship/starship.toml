@@ -1,12 +1,12 @@
 format = """
 [\uE0B6](green)$sudo\
-[\uE0B6](bg:green fg:white)$username$hostname[\uE0B4](bg:blue fg:white)\
 $directory[\uE0B4](bg:purple fg:blue)\
 $git_branch$gitstatus$git_state[\uE0B4](purple)\
 $fill\
 [\uE0B6](black)$status\
+[\uE0B6](bg:green fg:white)$username$hostname\
 [\uE0B6](bg:black fg:yellow)$cmd_duration\
-[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)\
+[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)
 $linebreak\
 $character
 """
