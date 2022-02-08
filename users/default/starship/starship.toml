@@ -1,5 +1,5 @@
 format = """
-[┌─](white)$directory$fill$hostname$fill$time
+[┌─](white)[\uE0B6](cyan)$shell[\uE0B6](bg:cyan fg:white)\$username$hostname[\uE0B4](bg:blue fg:white)$directory[\uE0B4](bg:purple fg:blue)$git_branch$gitstatus$git_state[\uE0B4](purple)$fill$hostname$fill[\uE0B6](black)$status[\uE0B6](bg:black fg:yellow)$cmd_duration[\uE0B6](bg:yellow fg:white)$time[\uE0B4](white)
 [└─](white)$character
 """
 
