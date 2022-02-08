@@ -2,8 +2,6 @@
 
 {
 
-  programs = {
-
     services = {
       greetd = {
         enable = true;
@@ -17,7 +15,5 @@
       };
 
     };
-
-  };
 
 }
