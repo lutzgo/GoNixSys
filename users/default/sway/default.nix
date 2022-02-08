@@ -47,7 +47,7 @@ in
       mako
       slurp
       swaylock
-      swayidle
+      # swayidle
       waybar
       wl-clipboard
       wofi
