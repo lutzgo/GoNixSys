@@ -19,6 +19,7 @@
           enable = true;
           mobile.enable = true;
           runUsingSystemd = true;
+          useQtScaling = true;
         };
         # layout = "de";
         # videoDrivers = [ "nvidia"];
