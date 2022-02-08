@@ -2,6 +2,10 @@
 
 {
 
+  programs = {
+    kdeconnect.enable = true;
+  };
+
   services = {
       xserver = {
         enable = true;
@@ -13,9 +17,10 @@
         };
         desktopManager.plasma5 = {
           enable = true;
+          mobile.enable = true;
           runUsingSystemd = true;
         };
-        layout = "de";
+        # layout = "de";
         # videoDrivers = [ "nvidia"];
       };
 
