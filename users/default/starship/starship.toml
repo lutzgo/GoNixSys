@@ -1,6 +1,6 @@
 format = """
-[┌───────────────────](white) $fill $hostname $fill [──────────────────]
-[└─](white)$directory$fill$time[─]
+[┌───────────────────](white)$fill$hostname$fill[──────────────────](white)
+[└─](white)$directory$fill$time[─](white)
 $character
 """
 
