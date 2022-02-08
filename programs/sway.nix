@@ -26,28 +26,28 @@
 #   })
 # ];
 
-  programs = {
+  # programs = {
 
-    sway = {
-      enable = true;
-      wrapperFeatures.gtk = true; # so that gtk works properly
-      extraPackages = with pkgs; [
-        brightnessctl
-        dmenu
-        foot
-        grim
-        kanshi
-        mako
-        slurp
-        swaylock
-        swayidle
-        waybar
-        wl-clipboard
-        wofi
-        wofi-emoji
-      ];
-    };
-  };
+  #   sway = {
+  #     enable = true;
+  #     wrapperFeatures.gtk = true; # so that gtk works properly
+  #     extraPackages = with pkgs; [
+  #       brightnessctl
+  #       dmenu
+  #       foot
+  #       grim
+  #       kanshi
+  #       mako
+  #       slurp
+  #       swaylock
+  #       swayidle
+  #       waybar
+  #       wl-clipboard
+  #       wofi
+  #       wofi-emoji
+  #     ];
+  #   };
+  # };
 
   services = {
     greetd = {
