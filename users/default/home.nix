@@ -19,6 +19,7 @@
     # ./alacritty.nix
     # ./mako.nix
     ./fish.nix
+    ./foot.nix
     ./git.nix
     # ./nushell.nix
     # ./neofetch/default.nix
