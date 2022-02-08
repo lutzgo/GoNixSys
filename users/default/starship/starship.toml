@@ -1,7 +1,6 @@
 format = """
-[┌───────────────────](white)$fill$hostname$fill[──────────────────](white)
-[└─](white)$directory$fill$time[─](white)
-$character
+[┌─](white)$directory$fill$hostname$fill$time
+[└─](white)$character
 """
 
 
@@ -44,7 +43,7 @@ symbol = " "
 symbol = " "
 
 [fill]
-symbol = " "
+symbol = "─"
 
 [git_branch]
 format = "[ \uf113 $symbol$branch]($style)"
