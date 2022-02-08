@@ -1,7 +1,7 @@
 format = """
-[┌───────────────────>](bold green)
-[│](bold green)$directory$rust$package
-[└─>](bold green)
+[┌───────────────────](white) $fill $hostname $fill [──────────────────]
+[└─](white)$directory$fill$time[─]
+$character
 """
 
 
