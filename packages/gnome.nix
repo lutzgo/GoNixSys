@@ -5,8 +5,9 @@
   environment = {
     gnome.excludePackages = with pkgs; [
       epiphany
+      evince
       gnome.atomix
-      gnome-geary
+      gnome.geary
       gnome.gedit
       gnome.gnome-characters
       gnome.gnome-maps
@@ -23,7 +24,7 @@
       gnome-user-docs
       xterm
       yelp
-      ];
+    ];
     
     systemPackages = with pkgs; [
       foot
@@ -31,7 +32,7 @@
       gnomeExtensions.appindicator
       polkit_gnome
       vlc
-   ];
+    ];
 
   };
 
