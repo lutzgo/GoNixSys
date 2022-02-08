@@ -21,6 +21,7 @@
     ./fish.nix
     ./foot.nix
     ./git.nix
+    ./kde.nix
     # ./nushell.nix
     # ./neofetch/default.nix
     # ./swappy.nix
