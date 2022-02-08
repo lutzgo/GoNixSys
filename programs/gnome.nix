@@ -16,11 +16,12 @@
     };
     layout = "de";
     # videoDrivers = [ "nvidia"];
+
+    flatpak.enable = true;
+
+    gnome.gnome-keyring.enable = true;
+    
   };
-
-  flatpak.enable = true;
-
-  gnome.gnome-keyring.enable = true;
 
   users.users.lgo.extraGroups = [ "flatpak" ];
 
