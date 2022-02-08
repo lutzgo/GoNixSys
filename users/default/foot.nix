@@ -6,7 +6,10 @@
     server.enable = true;
     settings = {
       main = {
-        term = "xterm-256color";
+        term = "foot";
+
+        app-id = "foot";
+        title = "foot";
 
         font = "Iosevka:size=11";
         dpi-aware = "yes";
