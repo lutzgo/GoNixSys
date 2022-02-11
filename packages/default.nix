@@ -1,15 +1,11 @@
 { config, pkgs, lib, ... }:
 
 let
-     pkgs = import (builtins.fetchGit {
-         # Descriptive name to make the store path easier to identify                
-         name = "my-old-revision";                                                 
-         url = "https://github.com/NixOS/nixpkgs/";                       
-         ref = "refs/heads/nixpkgs-unstable";                     
-         rev = "c82b46413401efa740a0b994f52e9903a4f6dcd5";                                           
-     }) {};                                                                           
+    pkgs = import (builtins.fetchTarball {
+        url = "https://github.com/NixOS/nixpkgs/archive/c82b46413401efa740a0b994f52e9903a4f6dcd5.tar.gz";
+    }) {};
 
-     myPkg = pkgs.remarshal;
+    myPkg = pkgs.remarshal;
 in
 
 {
