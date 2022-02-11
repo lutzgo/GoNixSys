@@ -31,14 +31,12 @@
       # nushell
       pciutils
       procs
-      remarshal
       ripgrep-all
       # rmesg
       sd
       starship
       tealdeer
       tokei
-      python310Packages.tomlkit
       wget
       zellij
       zoxide
