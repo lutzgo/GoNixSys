@@ -31,6 +31,7 @@
       # nushell
       pciutils
       procs
+      remarshal
       ripgrep-all
       # rmesg
       sd
