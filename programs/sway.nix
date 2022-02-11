@@ -3,12 +3,12 @@
 {
 
   environment = {
-    etc = {
-      # Put config files in /etc. Note that you also can put these in ~/.config, but then you can't manage them with NixOS anymore!
-      "sway/config".source = ./dotfiles/sway/config;
-      "xdg/waybar/config".source = ./dotfiles/waybar/config;
-      "xdg/waybar/style.css".source = ./dotfiles/waybar/style.css;
-    };
+    # etc = {
+    #   # Put config files in /etc. Note that you also can put these in ~/.config, but then you can't manage them with NixOS anymore!
+    #   "sway/config".source = ./dotfiles/sway/config;
+    #   "xdg/waybar/config".source = ./dotfiles/waybar/config;
+    #   "xdg/waybar/style.css".source = ./dotfiles/waybar/style.css;
+    # };
 
     systemPackages = with pkgs; [
       (
