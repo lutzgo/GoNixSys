@@ -79,9 +79,9 @@
 
   };
 
-  services.redshift = {
-    enable = true;
-  };
+  # services.redshift = {
+  #   enable = true;
+  # };
 
   systemd.user = {
 
