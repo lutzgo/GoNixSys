@@ -1,5 +1,17 @@
 { config, pkgs, lib, ... }:
 
+let
+     pkgs = import (builtins.fetchGit {
+         # Descriptive name to make the store path easier to identify                
+         name = "my-old-revision";                                                 
+         url = "https://github.com/NixOS/nixpkgs/";                       
+         ref = "refs/heads/nixpkgs-unstable";                     
+         rev = "c82b46413401efa740a0b994f52e9903a4f6dcd5";                                           
+     }) {};                                                                           
+
+     myPkg = pkgs.remarshal;
+in
+
 {
   nixpkgs.config = {
     allowUnfree = true;
@@ -31,7 +43,7 @@
       # nushell
       pciutils
       procs
-      remarshal_0_10_0
+      remarshal
       ripgrep-all
       # rmesg
       sd
