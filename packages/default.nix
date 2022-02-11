@@ -38,6 +38,7 @@
       starship
       tealdeer
       tokei
+      python310Packages.tomlkit
       wget
       zellij
       zoxide
