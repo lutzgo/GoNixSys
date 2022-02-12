@@ -77,9 +77,9 @@ in
         "Mod4+Shift+r" = "reload";
         # Kill focused window
         "Mod4+Shift+q" = "kill";
-        "Mod4+d" = "exec wofi";
+        "Mod4+d" = "exec dmenu";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
-        "Mod4+x" = "exec foot-client";
+        "Mod4+x" = "exec foot";
       };
 
       output = {
