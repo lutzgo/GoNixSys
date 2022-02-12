@@ -152,7 +152,7 @@
       };
 
       kanshi = {
-        enable = true;
+        # enable = true;
         description = "Kanshi output autoconfig";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
@@ -168,7 +168,7 @@
       };
 
       mako = {
-        enable = true;
+        # enable = true;
         description = "Mako notification daemon";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
