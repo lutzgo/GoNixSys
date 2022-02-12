@@ -8,6 +8,7 @@
       url = github:nix-community/home-manager/master;
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
   outputs = { self, nixpkgs, home-manager, nixos-hardware, ... }:
@@ -27,6 +28,7 @@
       lgo = home-manager.lib.homeManagerConfiguration {
         system = "x86_64-linux";
         inherit pkgs;
+        extraSpecialArgs = "inputs.nix-colors.colorSchemes";
         username = "lgo";
         homeDirectory = "/home/lgo";
         configuration = {
