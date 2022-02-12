@@ -86,6 +86,15 @@ in
         "*" = { bg = "${background} fit #000000"; };
       };
 
+      startup = [
+        # Status bar: waybar
+        { command = "export SWAYSOCK=/run/user/1000/sway-ipc.1000.(pgrep -f 'sway').so"; }
+        # Notification daemon
+        { command = "export WLR_NO_HARDWARE_CURSORS=1"; }
+        # Polkit
+        # { command = "/run/current-system/sw/libexec/polkit-gnome-authentication-agent-1"; }
+      ];
+
     };
   };
 
