@@ -23,9 +23,17 @@ in
     };
   };
 
+  programs = {
+    fish = {
+      loginShellInit = ''
+        if test (id --user $USER) -ge 1000 && test (tty) = "/dev/tty1"
+        exec startsway
+        end
+      '';
+    };
+  };
+
   wayland.windowManager.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
     config = {
       gaps = {
         outer = 5;
@@ -37,21 +45,5 @@ in
       bars = [ ];
     };
   };
-
-  home.packages = with pkgs; [
-      brightnessctl
-      dmenu
-      foot
-      grim
-      kanshi
-      mako
-      slurp
-      swaylock
-      # swayidle
-      waybar
-      wl-clipboard
-      wofi
-      wofi-emoji
-    ];
 
 }
