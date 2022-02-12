@@ -63,15 +63,12 @@ in
       };
       floating.border = 1;
       window.border = 1;
-      # bars = [ ];
+      bars = [ ];
 
 
       input = {
         "*" = {
           xkb_layout = "de";
-          xkb_variant = "nodeadkeys";
-          xkb_options = "grp:alt_shift_toggle";
-          xkb_numlock = "enable";
         };
       };
 
@@ -88,6 +85,10 @@ in
         "${modifier}+d" = "exec ${menu}";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
         "${modifier}+x" = "exec foot-client";
+      };
+
+      output = {
+        "*" = { bg = "${background} fit #000000"; };
       };
 
     };
