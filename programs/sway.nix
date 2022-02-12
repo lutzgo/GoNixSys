@@ -26,6 +26,22 @@
           '';
         }
       )
+
+      (
+        pkgs.writeTextFile {
+          name = "Sway Systemd Session";
+          destination = "/usr/share/wayland-sessions/sway-session.desktop";
+          executable = false;
+          text = ''
+            [Desktop Entry]
+            Name=Sway Service
+            Comment=SirCmpwn's Wayland window manager as a systemd service
+            Exec=/bin/startsway
+            Type=Application
+          '';
+        }
+      )
+
     ];
 
   };
@@ -75,20 +91,20 @@
       ];
     };
 
-    waybar.enable = true;
+    # waybar.enable = true;
 
   };
 
-  services = {
-    greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "${pkgs.greetd.greetd}/bin/agreety --cmd startsway";
-        };
-      };
-    };
-  };
+  # services = {
+  #   greetd = {
+  #     enable = true;
+  #     settings = {
+  #       default_session = {
+  #         command = "${pkgs.greetd.greetd}/bin/agreety --cmd startsway";
+  #       };
+  #     };
+  #   };
+  # };
 
   systemd.user = {
 
