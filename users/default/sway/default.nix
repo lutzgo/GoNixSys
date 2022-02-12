@@ -2,7 +2,7 @@
 
 let
   background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
-  menu = "wofi";
+  menu = "dmenu";
   modifier = "Mod4";
 in
 
@@ -28,16 +28,26 @@ in
       enable = true;
     };
 
+    waybar = {
+      enable = true;
+      systemd = {
+        enable = true;
+        target = "sway-session.target";
+      };
+    };
+
   };
 
   services = {
     kanshi = {
       enable = true;
+      systemdTarget = "sway-session.target";
     };
   };
 
   wayland.windowManager.sway = {
     enable = true;
+    systemdIntegration = true;
     config = {
 
       fonts = {
