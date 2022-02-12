@@ -33,14 +33,16 @@ in
       '';
     };
 
-    kanshi = {
-      enable = true;
-    };
-
     mako = {
       enable = true;
     };
 
+  };
+
+  services = {
+    kanshi = {
+      enable = true;
+    };
   };
 
   wayland.windowManager.sway = {
