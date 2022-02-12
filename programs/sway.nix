@@ -19,9 +19,9 @@
           text = ''
             #! ${pkgs.bash}/bin/bash
 
-            # first import environment variables from the login manager
-            exec "systemctl --user import-environment; systemctl --user start sway-session.target"
-            # then start the service
+            # first import environment variables from the login manager then start the service
+            exec "systemctl --user import-environment; systemctl --user start sway.service"
+            # 
             # exec systemctl --user start sway.service
           '';
         }
