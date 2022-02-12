@@ -12,7 +12,7 @@ in
     };
   };
 
-  programs = {
+  programs = let colorscheme = config.colorscheme; in {
 
     fish = {
       loginShellInit = ''
