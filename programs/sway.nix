@@ -27,20 +27,20 @@
         }
       )
 
-      (
-        pkgs.writeTextFile {
-          name = "Sway Systemd Session";
-          destination = "/usr/share/wayland-sessions/sway-session.desktop";
-          executable = false;
-          text = ''
-            [Desktop Entry]
-            Name=Sway Systemd Session
-            Comment=SirCmpwn's Wayland window manager as a systemd service
-            Exec=/bin/startsway
-            Type=Application
-          '';
-        }
-      )
+      # (
+      #   pkgs.writeTextFile {
+      #     name = "Sway Systemd Session";
+      #     destination = "/usr/share/wayland-sessions/sway-session.desktop";
+      #     executable = false;
+      #     text = ''
+      #       [Desktop Entry]
+      #       Name=Sway Systemd Session
+      #       Comment=SirCmpwn's Wayland window manager as a systemd service
+      #       Exec=/bin/startsway
+      #       Type=Application
+      #     '';
+      #   }
+      # )
 
     ];
 
@@ -95,18 +95,18 @@
 
   };
 
-  services = {
-    xserver = {
-      enable = true;
-      displayManager = {
-        # defaultSession = "Sway Systemd Session";
-        gdm = {
-          enable = true;
-          wayland = true;
-        };
-      };
-    };
-  };
+  # services = {
+  #   xserver = {
+  #     enable = true;
+  #     displayManager = {
+  #       # defaultSession = "Sway Systemd Session";
+  #       gdm = {
+  #         enable = true;
+  #         wayland = true;
+  #       };
+  #     };
+  #   };
+  # };
 
   systemd.user = {
 
