@@ -11,7 +11,7 @@
         app-id = "foot";
         title = "foot";
 
-        font = "Iosevka:size=11";
+        font = "Fira Code:size=11";
         dpi-aware = "yes";
       };
 

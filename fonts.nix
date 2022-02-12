@@ -2,7 +2,7 @@
 
 {
   fonts.fonts = with pkgs; [
-    iosevka
+    fira-code
     inter
     roboto
     noto-fonts-emoji
@@ -18,7 +18,7 @@
       defaultFonts = {
         serif = [ "Roboto Slab" ];
         sansSerif = [ "Inter" ];
-        monospace = [ "Iosevka" ];
+        monospace = [ "Fira Code" ];
         emoji = [ "Noto Color Emoji" ];
       };
     };

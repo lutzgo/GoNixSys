@@ -80,15 +80,15 @@ in {
           };
           size = 13;
           normal = {
-            family = "Iosevka";
+            family = "Fira Code";
             style = "Medium";
           };
           bold = {
-            family = "Iosevka";
+            family = "Fira Code";
             style = "Bold";
           };
           italic = {
-            family = "Iosevka";
+            family = "Fira Code";
             style = "Italic";
           };
         };
