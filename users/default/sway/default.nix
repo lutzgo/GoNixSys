@@ -3,6 +3,7 @@
 let
   background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
   menu = "wofi";
+  modifier = "Mod4";
 in
 
 {
@@ -65,6 +66,7 @@ in
       };
 
       menu = menu;
+      modifier = modifier;
 
       keybindings = {
         # Exit sway (logs you out of your Wayland session)
