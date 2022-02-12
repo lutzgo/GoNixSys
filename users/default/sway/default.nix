@@ -53,7 +53,7 @@ in
       };
       floating.border = 1;
       window.border = 1;
-      bars = [ ];
+      # bars = [ ];
 
 
       input = {
