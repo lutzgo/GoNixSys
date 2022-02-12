@@ -169,7 +169,7 @@
       };
 
       waybar = {
-        description = "Wayland bar for Sway and Wlroots based compositors;
+        description = "Wayland bar for Sway and Wlroots based compositors";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
         serviceConfig = {
