@@ -2,8 +2,6 @@
 
 let
   background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
-  menu = "dmenu";
-  modifier = "Mod4";
 in
 
 {
@@ -77,14 +75,14 @@ in
 
       keybindings = {
         # Exit sway (logs you out of your Wayland session)
-        "${modifier}+Shift+e" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'";
+        "Mod4+Shift+e" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'";
         # Reload the configuration file
-        "${modifier}+Shift+r" = "reload";
+        "Mod4+Shift+r" = "reload";
         # Kill focused window
-        "${modifier}+Shift+q" = "kill";
-        "${modifier}+d" = "exec ${menu}";
+        "Mod4+Shift+q" = "kill";
+        "Mod4+d" = "exec wofi";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
-        "${modifier}+x" = "exec foot-client";
+        "Mod4+x" = "exec foot-client";
       };
 
       output = {
