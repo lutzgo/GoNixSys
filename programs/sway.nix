@@ -141,7 +141,7 @@
       };
 
       kanshi = {
-        description = "Kanshi output autoconfig ";
+        description = "Kanshi output autoconfig";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
         serviceConfig = {
@@ -149,6 +149,32 @@
           # at .config/kanshi/config
           ExecStart = ''
             ${pkgs.kanshi}/bin/kanshi
+          '';
+          RestartSec = 5;
+          Restart = "always";
+        };
+      };
+
+      mako = {
+        description = "Mako notification daemon";
+        wantedBy = [ "graphical-session.target" ];
+        partOf = [ "graphical-session.target" ];
+        serviceConfig = {
+          ExecStart = ''
+            ${pkgs.mako}/bin/mako
+          '';
+          RestartSec = 5;
+          Restart = "always";
+        };
+      };
+
+      waybar = {
+        description = "Wayland bar for Sway and Wlroots based compositors;
+        wantedBy = [ "graphical-session.target" ];
+        partOf = [ "graphical-session.target" ];
+        serviceConfig = {
+          ExecStart = ''
+            ${pkgs.waybar}/bin/waybar
           '';
           RestartSec = 5;
           Restart = "always";
