@@ -30,11 +30,11 @@
       (
         pkgs.writeTextFile {
           name = "Sway Systemd Session";
-          destination = "/usr/share/wayland-sessions/sway-session.desktop";
+          destination = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions/sway-session.desktop";
           executable = false;
           text = ''
             [Desktop Entry]
-            Name=Sway Service
+            Name=Sway Systemd Session
             Comment=SirCmpwn's Wayland window manager as a systemd service
             Exec=/bin/startsway
             Type=Application
@@ -99,6 +99,7 @@
     xserver = {
       enable = true;
       displayManager = {
+        defaultSession = "Sway Systemd Session";
         sddm = {
           enable = true;
           settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
