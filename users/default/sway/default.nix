@@ -33,6 +33,18 @@ in
     };
   };
 
+  services = {
+
+    kanshi = {
+      enable = true;
+    };
+
+    mako = {
+      enable = true;
+    };
+
+  };
+
   wayland.windowManager.sway = {
     config = {
       gaps = {
