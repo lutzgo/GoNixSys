@@ -139,6 +139,9 @@
         environment.PATH = lib.mkForce null;
         serviceConfig = {
           Type = "simple";
+          ExecStartPre= ''
+            systemctl --user unset-environment WAYLAND_DISPLAY DISPLAY
+          '';
           ExecStart = ''
             ${pkgs.dbus}/bin/dbus-run-session ${pkgs.sway}/bin/sway --debug
           '';
@@ -149,6 +152,7 @@
       };
 
       kanshi = {
+        enable = true;
         description = "Kanshi output autoconfig";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
@@ -164,6 +168,7 @@
       };
 
       mako = {
+        enable = true;
         description = "Mako notification daemon";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
@@ -177,6 +182,7 @@
       };
 
       waybar = {
+        # enable = true;
         description = "Wayland bar for Sway and Wlroots based compositors";
         wantedBy = [ "graphical-session.target" ];
         partOf = [ "graphical-session.target" ];
