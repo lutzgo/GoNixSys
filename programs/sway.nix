@@ -95,16 +95,17 @@
 
   };
 
-  # services = {
-  #   greetd = {
-  #     enable = true;
-  #     settings = {
-  #       default_session = {
-  #         command = "${pkgs.greetd.greetd}/bin/agreety --cmd startsway";
-  #       };
-  #     };
-  #   };
-  # };
+  services = {
+    xserver = {
+      enable = true;
+      displayManager = {
+        sddm = {
+          enable = true;
+          settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
+        };
+      };
+    };
+  };
 
   systemd.user = {
 
