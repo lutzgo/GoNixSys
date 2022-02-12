@@ -1,6 +1,16 @@
 { config, pkgs, fetchurl, ... }:
 
+let
+  background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
+in
+
 {
+
+  home = {
+    file = {
+      ".cache/backgrounds/greatwave_nord.jpg".source = ../../../backgrounds/greatwave_nord.jpg;
+    };
+  };
 
   programs = {
 
@@ -25,6 +35,7 @@
   };
 
   wayland.windowManager.sway = {
+    enable = true;
     config = {
       gaps = {
         outer = 5;
@@ -43,7 +54,7 @@
           xkb_numlock = "enable";
         };
       };
-      
+
     };
   };
 
