@@ -99,7 +99,7 @@
     xserver = {
       enable = true;
       displayManager = {
-        defaultSession = "Sway Systemd Session";
+        # defaultSession = "Sway Systemd Session";
         sddm = {
           enable = true;
           settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
