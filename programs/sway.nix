@@ -30,7 +30,7 @@
       (
         pkgs.writeTextFile {
           name = "Sway Systemd Session";
-          destination = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions/sway-session.desktop";
+          destination = "/usr/share/wayland-sessions/sway-session.desktop";
           executable = false;
           text = ''
             [Desktop Entry]
@@ -100,9 +100,9 @@
       enable = true;
       displayManager = {
         # defaultSession = "Sway Systemd Session";
-        sddm = {
+        gdm = {
           enable = true;
-          settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
+          wayland = true;
         };
       };
     };
