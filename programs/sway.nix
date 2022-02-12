@@ -83,7 +83,6 @@
         grim
         kanshi
         mako
-        pactl
         slurp
         swaylock
         swayidle
