@@ -6,6 +6,7 @@
     server.enable = true;
     settings = {
       main = {
+        shell= "fish";
         term = "foot";
 
         app-id = "foot";
