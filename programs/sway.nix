@@ -72,6 +72,8 @@
 
   programs = {
 
+    light.enable = true;
+
     sway = {
       enable = true;
       wrapperFeatures.gtk = true; # so that gtk works properly
@@ -81,6 +83,7 @@
         grim
         kanshi
         mako
+        pactl
         slurp
         swaylock
         swayidle
