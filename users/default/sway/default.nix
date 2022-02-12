@@ -1,27 +1,6 @@
 { config, pkgs, fetchurl, ... }:
 
-let
-  colorScheme = import ../../../color-schemes/nord.nix;
-  background = "$HOME/.cache/backgrounds/greatwave_nord.jpg";
-  modifier = "Mod4";
-  left = "h";
-  down = "j";
-  up = "k";
-  right = "l";
-  resizeAmount = "30px";
-  menu = "wofi";
-  # filebrowser = "nemo";
-  webbrowser = "brave";
-  # webbrowserPersistent = "firefox";
-  # musicplayer = "spotify";
-in
 {
-
-  home = {
-    file = {
-      ".cache/backgrounds/greatwave_nord.jpg".source = ../../../backgrounds/greatwave_nord.jpg;
-    };
-  };
 
   programs = {
 
@@ -55,6 +34,16 @@ in
       floating.border = 1;
       window.border = 1;
       bars = [ ];
+
+      input = {
+        "*" = {
+          xkb_layout = "de";
+          xkb_variant = "nodeadkeys";
+          xkb_options = "grp:alt_shift_toggle";
+          xkb_numlock = "enable";
+        };
+      };
+      
     };
   };
 
