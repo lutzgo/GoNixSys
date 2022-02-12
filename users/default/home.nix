@@ -14,7 +14,10 @@
   # changes in each release.
   home.stateVersion = "20.09";
 
+  colorscheme = nix-colors.colorSchemes.nord;
+
   imports = [
+    nix-colors.homeManagerModule
     ./brave.nix
     # ./alacritty.nix
     # ./mako.nix
