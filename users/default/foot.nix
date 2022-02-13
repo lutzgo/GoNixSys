@@ -23,9 +23,15 @@
       };
 
       colors = {
+        alpha = 0.85;
         background = "#${colorscheme.colors.base00}";
         foreground = "#${colorscheme.colors.base05}";
       };
+
+      cursor = {
+        style = "beam";
+        blink = true;
+      }
     };
   };
 
