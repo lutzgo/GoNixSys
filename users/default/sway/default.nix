@@ -73,18 +73,6 @@ in
         };
       };
 
-      keybindings = {
-        # Exit sway (logs you out of your Wayland session)
-        # "Mod4+Shift+e" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'";
-        # Reload the configuration file
-        "Mod4+Shift+r" = "reload";
-        # Kill focused window
-        "Mod4+Shift+q" = "kill";
-        "Mod4+d" = "exec fuzzel";
-        # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
-        "Mod4+x" = "exec foot";
-      };
-
       menu = fuzzel;
 
       modifier = Mod4;
