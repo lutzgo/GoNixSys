@@ -33,29 +33,21 @@
     sway = {
       enable = true;
       # wrapperFeatures.gtk = true; # so that gtk works properly
-      # extraPackages = with pkgs; [
-      #   brightnessctl
-      #   fuzzel
-      #   grim
-      #   kanshi
-      #   mako
-      #   slurp
-      #   swaylock
-      #   # swayidle
-      #   waybar
-      #   wl-clipboard
-      #   wofi
-      #   # wofi-emoji
-      # ];
+      extraPackages = with pkgs; [
+        brightnessctl
+        fuzzel
+        grim
+        kanshi
+        mako
+        slurp
+        swaylock
+        # swayidle
+        waybar
+        wl-clipboard
+        wofi
+        wofi-emoji
+      ];
     };
-
-    # fish = {
-    #   loginShellInit = ''
-    #     if test (id --user $USER) -ge 1000 && test (tty) = "/dev/tty1"
-    #     exec startsway
-    #     end
-    #   '';
-    # };
 
   };
 
