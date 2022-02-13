@@ -14,13 +14,13 @@ in
 
   programs = let colorscheme = config.colorscheme; in {
 
-    # fish = {
-    #   loginShellInit = ''
-    #     if test (id --user $USER) -ge 1000 && test (tty) = "/dev/tty1"
-    #     exec sway
-    #     end
-    #   '';
-    # };
+    fish = {
+      loginShellInit = ''
+        if test (id --user $USER) -ge 1000 && test (tty) = "/dev/tty1"
+        exec sway
+        end
+      '';
+    };
 
     mako = {
       enable = true;
@@ -37,15 +37,6 @@ in
   };
 
   services = {
-
-    # greetd = {
-    #   enable = true;
-    #   settings = {
-    #     default_session = {
-    #       command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
-    #     };
-    #   };
-    # };
 
     kanshi = {
       enable = true;
