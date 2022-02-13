@@ -26,13 +26,13 @@ in
       enable = true;
     };
 
-    waybar = {
-      enable = true;
-      systemd = {
-        enable = true;
-        target = "sway-session.target";
-      };
-    };
+    # waybar = {
+    #   enable = true;
+    #   systemd = {
+    #     enable = true;
+    #     target = "sway-session.target";
+    #   };
+    # };
 
   };
 
