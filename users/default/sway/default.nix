@@ -45,11 +45,27 @@ in
 
   };
 
-  wayland.windowManager.sway = {
+  wayland.windowManager.sway = let colorscheme = config.colorscheme; in {
     enable = true;
     systemdIntegration = true;
     wrapperFeatures.gtk = true;
     config = {
+
+      colors = {
+        background = "#${colorscheme.colors.base00}";
+        focused = {
+          background = "#${colorscheme.colors.base10}";
+          border = "#${colorscheme.colors.base09}";
+          childBorder = "#${colorscheme.colors.base10}";
+          indicator = "#${colorscheme.colors.base08}";
+          text = "#${colorscheme.colors.base06}";
+        };
+        focusedInactive
+        placeholder
+        unfocused
+        urgent
+        # foreground = "#${colorscheme.colors.base05}";
+      }
 
       fonts = {
         names = [ "Roboto" ];
@@ -57,13 +73,17 @@ in
         size = 12.0;
       };
 
+      #### Gaps ####
       gaps = {
+        inner = 5;
         outer = 5;
         smartBorders = "on";
-        smartGaps = true;
       };
+
+      #### Borders ####
       floating.border = 1;
       window.border = 1;
+
       bars = [ ];
 
 
