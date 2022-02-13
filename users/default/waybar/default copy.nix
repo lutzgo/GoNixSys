@@ -1,6 +1,19 @@
 { config, pkgs, lib, ... }:
 
-{
+let
+  colorScheme = import ../../../color-schemes/nord.nix;
+  scratchpadIndicatorScript = builtins.fetchurl {
+    url = https://raw.githubusercontent.com/justinesmithies/sway-dotfiles/master/.local/bin/statusbar/scratchpad-indicator.sh;
+    sha256 = "0xv2w1512gv31sbnwd1grdhrcvzngn8ljdj3x61mqgcqfcp57mwz";
+  };
+in {
+  home.packages = with pkgs; [
+    jq
+  ];
+
+  home.file = {
+    ".config/waybar/style.css".source = ./style.css;
+  };
   programs.waybar = {
     enable = true;
     settings = [
