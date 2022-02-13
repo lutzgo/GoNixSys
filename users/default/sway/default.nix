@@ -77,7 +77,7 @@ in
         "Mod4+Shift+r" = "reload";
         # Kill focused window
         "Mod4+Shift+q" = "kill";
-        "Mod4+d" = "exec wofi";
+        "Mod4+d" = "exec fuzzel";
         # Launch the default terminal. $TERM is defined in ../alacritty.nix line 11
         "Mod4+x" = "exec foot";
       };

@@ -79,7 +79,7 @@
       wrapperFeatures.gtk = true; # so that gtk works properly
       extraPackages = with pkgs; [
         brightnessctl
-        dmenu
+        fuzzel
         grim
         kanshi
         mako
