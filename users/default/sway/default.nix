@@ -85,6 +85,10 @@ in
         "Mod4+x" = "exec foot";
       };
 
+      menu = fuzzel;
+
+      modifier = Mod4;
+
       output = {
         "*" = { bg = "${background} fit #000000"; };
       };
