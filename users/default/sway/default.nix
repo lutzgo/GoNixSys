@@ -46,6 +46,7 @@ in
   wayland.windowManager.sway = {
     enable = true;
     systemdIntegration = true;
+    wrapperFeatures.gtk = true;
     config = {
 
       fonts = {
@@ -96,6 +97,22 @@ in
       ];
 
     };
+
+    homePackages = with pkgs; [
+        brightnessctl
+        fuzzel
+        grim
+        kanshi
+        mako
+        slurp
+        swaylock
+        # swayidle
+        waybar
+        wl-clipboard
+        wofi
+        # wofi-emoji
+      ];
+
   };
 
 }

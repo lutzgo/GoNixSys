@@ -74,24 +74,24 @@
 
     light.enable = true;
 
-    sway = {
-      enable = true;
-      wrapperFeatures.gtk = true; # so that gtk works properly
-      extraPackages = with pkgs; [
-        brightnessctl
-        fuzzel
-        grim
-        kanshi
-        mako
-        slurp
-        swaylock
-        # swayidle
-        waybar
-        wl-clipboard
-        wofi
-        # wofi-emoji
-      ];
-    };
+    # sway = {
+    #   enable = true;
+    #   wrapperFeatures.gtk = true; # so that gtk works properly
+    #   extraPackages = with pkgs; [
+    #     brightnessctl
+    #     fuzzel
+    #     grim
+    #     kanshi
+    #     mako
+    #     slurp
+    #     swaylock
+    #     # swayidle
+    #     waybar
+    #     wl-clipboard
+    #     wofi
+    #     # wofi-emoji
+    #   ];
+    # };
 
     # fish = {
     #   loginShellInit = ''
