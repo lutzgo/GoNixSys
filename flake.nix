@@ -69,7 +69,7 @@
           ./system/peter.nix
           ./users/default.nix
           ./.secrets/system/peter.nix
-          # ./programs/sway.nix
+          ./programs/greetd.nix
           # nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
           # ./packages/extra.nix
           #./programs/openrgb.nix

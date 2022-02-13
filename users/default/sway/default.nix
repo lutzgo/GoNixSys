@@ -38,14 +38,14 @@ in
 
   services = {
 
-    greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
-        };
-      };
-    };
+    # greetd = {
+    #   enable = true;
+    #   settings = {
+    #     default_session = {
+    #       command = "${pkgs.greetd.greetd}/bin/agreety --cmd sway";
+    #     };
+    #   };
+    # };
 
     kanshi = {
       enable = true;

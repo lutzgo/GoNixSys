@@ -8,7 +8,7 @@
         # package = pkgs.greetd.gtkgreet;
         settings = {
           default_session = {
-            command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway";
+            command = "${pkgs.greetd.tuigreet}/bin/agreety --time --cmd sway";
             user = "lgo";
           };
         };
