@@ -60,11 +60,34 @@ in
           indicator = "#${colorscheme.colors.base08}";
           text = "#${colorscheme.colors.base06}";
         };
-        focusedInactive
-        placeholder
-        unfocused
-        urgent
-        # foreground = "#${colorscheme.colors.base05}";
+        focusedInactive = {
+          background = "#${colorscheme.colors.base02}";
+          border = "#${colorscheme.colors.base00}";
+          childBorder = "#${colorscheme.colors.base02}";
+          indicator = "#${colorscheme.colors.base01}";
+          text = "#${colorscheme.colors.base06}";
+        };
+        placeholder = {
+          background = "#${colorscheme.colors.base00}";
+          border = "#${colorscheme.colors.base00}";
+          childBorder = "#${colorscheme.colors.base00}";
+          indicator = "#${colorscheme.colors.base00}";
+          text = "#${colorscheme.colors.base06}";
+        };
+        unfocused = {
+          background = "#${colorscheme.colors.base00}";
+          border = "#${colorscheme.colors.base00}";
+          childBorder = "#${colorscheme.colors.base00}";
+          indicator = "#${colorscheme.colors.base00}";
+          text = "#${colorscheme.colors.base03}";
+          };
+        urgent = {
+          background = "#${colorscheme.colors.base11}";
+          border = "#${colorscheme.colors.base01}";
+          childBorder = "#${colorscheme.colors.base11}";
+          indicator = "#${colorscheme.colors.base11}";
+          text = "#${colorscheme.colors.base06}";
+        };
       }
 
       fonts = {
@@ -93,9 +116,9 @@ in
         };
       };
 
-      menu = fuzzel;
+      menu = "fuzzel";
 
-      modifier = Mod4;
+      modifier = "Mod4";
 
       output = {
         "*" = { bg = "${background} fit #000000"; };
@@ -109,6 +132,8 @@ in
         # Polkit
         # { command = "/run/current-system/sw/libexec/polkit-gnome-authentication-agent-1"; }
       ];
+
+      terminal = "foot";
 
     };
 
@@ -124,7 +149,7 @@ in
         waybar
         wl-clipboard
         wofi
-        # wofi-emoji
+        wofi-emoji
       ];
 
   };
